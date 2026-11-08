@@ -1,30 +1,27 @@
-# Wizpig Races r5: pickup correction
+# Wizpig mixed-track compatibility preview
 
-**Prerelease / release candidate.** DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`), offline, separate profile containing only these two custom maps.
+DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`). Current package filenames contain `Catalogue-Naming-Test`.
 
-## Downloads
+## Compatibility change
 
-Download these individual archives from this repository:
+Both packages now use manifest/catalogue names rather than appending legacy `LEVEL_NAMES` data. This avoids the combined-name loader fault for these packages and allows the tested maps to coexist in one normal profile. No replacement executable or companion is required.
 
-- [Wizpig I r5](packages/Wizpig-I-1.0.14-USRevA-Pickup-Fix-r5.zip?raw=1)
-- [Wizpig II r5](packages/Wizpig-II-1.0.14-USRevA-Pickup-Fix-r5.zip?raw=1)
-- [SHA-256 checksums](SHA256SUMS.txt)
+The three race payload files, track IDs and existing credit are unchanged from r5. The only removed file is the unnecessary four-byte `name.bin`; its manifest entry was also removed.
 
-Import each ZIP directly. Do not rename it to `.dkrmap`.
+## Actual mixed-game validation
 
-## Changes
+Official Linux DKR-R 1.0.14 booted with Wizpig I, Wizpig II, Splashdown Pass, Strangled Shrine and both community HD packs enabled together. Wizpig I, Wizpig II and Strangled Shrine entered races with AI. Wizpig I accepted acceleration. Correct captions were observed for all four maps. Splashdown Pass's race was not entered.
 
-- Wizpig I pickup anchors lowered to the driving surface: balloons by 38 units, bananas by 18. X/Z positions unchanged.
-- Wizpig II: five new balloons repositioned; minimum red/blue anchor separation increased from 509.51 to 806.68 units. Bananas, original balloons, hazards and scenery unchanged.
-- Eight-racer grids, stationary starts, three laps and item counts preserved from r4.
-- Corrected individual ZIP format accepted by the official 1.0.14 importer. Inner files unchanged from the previous r5 candidate.
+No asset-bounds error, map-load failure or crash occurred in the successful session. Full races, all pickups/checkpoints, audio, Windows and multiplayer remain untested in this pass. Arbitrary other mods are not covered. See [validation](validation/MIXED-GAME-VALIDATION.md).
 
-## Tested and untested
+## Retained r5 pickup changes
 
-Both ZIPs passed isolated official host-importer installation/parsing and installed-payload checks. **r5 gameplay testing remains pending.** Check reachable pickups, spacing and complete races before relying on this revision.
+- Wizpig I: all 12 balloon anchors were lowered by 38 units and all 36 banana anchors by 18 units. X/Z positions were unchanged.
+- Wizpig II: five added balloons were repositioned; minimum red/blue anchor separation increased from 509.51 to 806.68 units. Bananas, original balloons, hazards and scenery were unchanged.
+- Eight-racer grids, stationary starts and three laps remain unchanged.
 
-## Known limits
+## Upgrade and rollback
 
-Session mods must be ON. Use a separate profile with only these two maps. Legacy captions can be blank, and other custom maps can exceed the name-section padding or misalign tables. Never enable duplicate revisions together. Back up working tracks and saves.
+Import the two new individual ZIPs into your existing profile and replace only the matching Wizpig IDs. Keep unrelated mods and saves. Do not enable duplicate revisions. Old r5 archives are retained only for rollback; their separate-profile limitation does not apply to the current preview's tested combination.
 
-Based on *Diddy Kong Racing* by Rare/Nintendo. Current package preparation credit: “Local preparation.” No full ROM, executable, source game models, textures or music is included. No official affiliation or endorsement is claimed.
+Based on *Diddy Kong Racing* by Rare/Nintendo. Preparation credit remains “Local preparation.” No official affiliation, endorsement or license to original game content is claimed.

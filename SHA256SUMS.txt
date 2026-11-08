@@ -1,2 +1,2 @@
-8447ed43cafffdbb2fd3d7eb44c612c87368d48d69a3968f3a6494313eb56edd  Wizpig-I-1.0.14-USRevA-Pickup-Fix-r5.zip
-a5213626c8e5b731a4bde08669d430d868af1f5d421667ce4488128df771a291  Wizpig-II-1.0.14-USRevA-Pickup-Fix-r5.zip
+df077b734f29eb28316489465b450ecfc5be56d4a15eab9626affb4d3b8845d5  Wizpig-I-USRevA-Catalogue-Naming-Test.zip
+8bbed80e40204bc1bdb7175f225d7007d9c5a0c0e0ede752e6655ecbce8d6bb4  Wizpig-II-USRevA-Catalogue-Naming-Test.zip

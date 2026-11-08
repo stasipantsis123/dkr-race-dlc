@@ -1,0 +1,30 @@
+[custom-tracks] loaded Wizpig I - Race by Local preparation (installed)
+[custom-tracks] loaded Wizpig I - Race by Local preparation (installed)
+[custom-tracks] loaded Wizpig II - Race by Local preparation (installed)
+[custom-tracks] splashdown-pass-ds ships 26 texture(s): 4 see-through, 0 animated
+[custom-tracks] loaded Splashdown Pass by Rare (DKR DS) / converted with Track Lab (installed)
+[custom-tracks] loaded Wizpig I - Race by Local preparation (installed)
+[custom-tracks] loaded Wizpig II - Race by Local preparation (installed)
+[custom-tracks] splashdown-pass-ds ships 26 texture(s): 4 see-through, 0 animated
+[custom-tracks] loaded Splashdown Pass by Rare (DKR DS) / converted with Track Lab (installed)
+[custom-tracks] strangled-shrine-ds ships 28 texture(s): 7 see-through, 0 animated
+[custom-tracks] loaded Strangled Shrine by Matheus Leite (installed)
+[custom-tracks] loaded Wizpig I - Race by Local preparation (installed)
+[custom-tracks] loaded Wizpig II - Race by Local preparation (installed)
+[custom-tracks] section 0: 65 retail + 4 added
+[custom-tracks] section 0: 65 retail + 2 added
+[custom-tracks] section 0: 65 retail + 2 added
+[custom-tracks] section 0: 65 retail + 4 added
+[custom-tracks] section 0: 65 retail + 4 added
+[custom-tracks] section 0: 65 retail + 2 added
+[custom-tracks] section 0: 65 retail + 2 added
+[custom-tracks] section 0: 65 retail + 4 added
+PASS us.v77 Wizpig pair + Splashdown Pass + Strangled Shrine + texture bank: 4 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v77 Wizpig pair only: 2 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v77 community tracks only: 2 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v77 all re-enabled: 4 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v80 Wizpig pair + Splashdown Pass + Strangled Shrine + texture bank: 4 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v80 Wizpig pair only: 2 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v80 community tracks only: 2 imported courses, unchanged stock name read, all catalogue captions exact
+PASS us.v80 all re-enabled: 4 imported courses, unchanged stock name read, all catalogue captions exact
+PASS 8 importer/asset-bank/catalogue cases without executable companion; no gameplay claim.

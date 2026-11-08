@@ -1,9 +1,32 @@
 {
-  "revision": "r5 (archive format correction only)",
-  "official_1_0_14_host_importer": "PASS: both individual ZIPs installed and parsed in a fresh isolated cloud directory",
-  "installed_payload_byte_comparison": "PASS",
-  "old_renamed_dkrmap_archive_negative_test": "Rejected as expected; importer requires a .zip file or .dkrmap directory",
-  "source_guard": "PASS: zero problems",
-  "mixed_custom_track_compatibility": "NOT SUPPORTED by this workaround; use a separate profile with these two maps only",
-  "r5_gameplay": "NOT TESTED / not yet confirmed by user"
+  "revision": "Catalogue-naming compatibility preview",
+  "date": "2026-11-08",
+  "official_host_importer": "PASS: both new Wizpig ZIPs installed alongside public Splashdown Pass and Strangled Shrine packages",
+  "asset_bank_catalogue_cases": 8,
+  "selections": [
+    "all four maps",
+    "Wizpig pair only",
+    "community maps only",
+    "all re-enabled"
+  ],
+  "name_banks": [
+    "us.v77",
+    "us.v80"
+  ],
+  "texture_augmented_bank": true,
+  "stock_name_read_unchanged": true,
+  "catalogue_captions_exact": true,
+  "course_payload_supported_revision": "us.v80 only",
+  "actual_runtime": "Official unmodified Linux DKR-R 1.0.14",
+  "race_entry_passed": [
+    "Wizpig I",
+    "Wizpig II",
+    "Strangled Shrine"
+  ],
+  "splashdown_race_entered": false,
+  "both_community_hd_packs_enabled": true,
+  "companion_or_replacement_executable_required": false,
+  "windows_gameplay_tested": false,
+  "full_race_completion_tested": false,
+  "multiplayer_tested": false
 }

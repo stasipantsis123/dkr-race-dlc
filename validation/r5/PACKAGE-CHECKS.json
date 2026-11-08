@@ -1,0 +1,32 @@
+[
+  {
+    "file": "Wizpig-I-1.0.14-USRevA-Pickup-Fix-r5.zip",
+    "bytes": 2350,
+    "sha256": "8447ed43cafffdbb2fd3d7eb44c612c87368d48d69a3968f3a6494313eb56edd",
+    "id": "wizpig1-ordinary-race-us-v80",
+    "package_members_unchanged": true,
+    "name_bytes": 4,
+    "payload_sha256": {
+      "header.bin": "e6dcad6f569dcf1c02e26a088f301dff6942ffbd0b23449332b4851dc0b60f60",
+      "manifest.json": "fc5b78b76deb17c8bea7c85d69665236c17f524edc59bd042eaff37ba4def473",
+      "name.bin": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "objects_collectables.bin": "d0169a278478049090b2f7bea397558869142d756167e30118bc3cddb6957b59",
+      "objects_structure.bin": "c4ed1d89456c234abb433f929268ee5e7d9dfe6a5ddcb7a3044c9723a57b4d84"
+    }
+  },
+  {
+    "file": "Wizpig-II-1.0.14-USRevA-Pickup-Fix-r5.zip",
+    "bytes": 3524,
+    "sha256": "a5213626c8e5b731a4bde08669d430d868af1f5d421667ce4488128df771a291",
+    "id": "wizpig2-ordinary-race-us-v80",
+    "package_members_unchanged": true,
+    "name_bytes": 4,
+    "payload_sha256": {
+      "header.bin": "b57fe2dc11f3b29a2908ef1925c5c05f1a2467f232ac59932aadfccc04922e3f",
+      "manifest.json": "2b7753649dc7035018f54fbf7209f40ef896d5575e9b051e7dc058732b197d9e",
+      "name.bin": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "objects_collectables.bin": "07dc16fb748872db24d653a081f7540e96c40f132854100af2a9347926f1acd3",
+      "objects_structure.bin": "ce7f7f8878be67b0c1186d4a3fccc6f61a75c58d165c5da5d25e41c525abacc8"
+    }
+  }
+]
