@@ -1,0 +1,17 @@
+# Do not add local game data, executables, saves or credentials.
+*.z64
+*.v64
+*.n64
+*.rom
+*.exe
+*.dll
+*.sav
+*.sra
+*.eep
+*.mpk
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+.DS_Store

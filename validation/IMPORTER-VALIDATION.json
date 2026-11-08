@@ -1,0 +1,9 @@
+{
+  "revision": "r5 (archive format correction only)",
+  "official_1_0_14_host_importer": "PASS: both individual ZIPs installed and parsed in a fresh isolated cloud directory",
+  "installed_payload_byte_comparison": "PASS",
+  "old_renamed_dkrmap_archive_negative_test": "Rejected as expected; importer requires a .zip file or .dkrmap directory",
+  "source_guard": "PASS: zero problems",
+  "mixed_custom_track_compatibility": "NOT SUPPORTED by this workaround; use a separate profile with these two maps only",
+  "r5_gameplay": "NOT TESTED / not yet confirmed by user"
+}
