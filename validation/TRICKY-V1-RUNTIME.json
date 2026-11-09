@@ -1,0 +1,271 @@
+{
+  "status": "Targeted public v1 compatibility check passed. Not a full course acceptance.",
+  "companion_version": "0.3.5",
+  "companion_sha256": "73e1057fb3dbc717c342239740b5d8e3fb319870377c4d3c42f33ab303de1ebb",
+  "candidate_zip_sha256": "6cb4b4e0f3acce4e4f37fdc623fdcaac57034508b7e9e39e4ef8e63dd52b2fde",
+  "catalogue_content_sha256": "2b427d3291986d70633b8b72225756bd2b75148605bea2893c874198fbd45245",
+  "geometry": 55,
+  "map": 65,
+  "main_nodes": 44,
+  "total_nodes": 44,
+  "cpu_native_finishes": [
+    {
+      "racer": 5,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 1,
+      "race_position": 1
+    },
+    {
+      "racer": 6,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 2,
+      "race_position": 2
+    },
+    {
+      "racer": 7,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 3,
+      "race_position": 3
+    },
+    {
+      "racer": 2,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 4,
+      "race_position": 4
+    },
+    {
+      "racer": 3,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 5,
+      "race_position": 5
+    },
+    {
+      "racer": 1,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 6,
+      "race_position": 6
+    },
+    {
+      "racer": 4,
+      "lap": 2,
+      "finished": 1,
+      "finish_position": 7,
+      "race_position": 7
+    }
+  ],
+  "sample_counts": {
+    "120": 7,
+    "360": 7,
+    "900": 7
+  },
+  "parking_900frame_positions": {
+    "5": {
+      "racer": 5,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -2043,
+      "y10": 48550,
+      "z10": 8762,
+      "dx10": 24,
+      "dy10": -253,
+      "dz10": 6,
+      "suppressed": 860,
+      "accepted_zero": 41,
+      "finished": 1,
+      "finish_position": 1
+    },
+    "6": {
+      "racer": 6,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -2177,
+      "y10": 48550,
+      "z10": 7897,
+      "dx10": -233,
+      "dy10": -254,
+      "dz10": -69,
+      "suppressed": 786,
+      "accepted_zero": 115,
+      "finished": 1,
+      "finish_position": 2
+    },
+    "7": {
+      "racer": 7,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -2304,
+      "y10": 48550,
+      "z10": 8691,
+      "dx10": -131,
+      "dy10": -247,
+      "dz10": -35,
+      "suppressed": 901,
+      "accepted_zero": 0,
+      "finished": 1,
+      "finish_position": 3
+    },
+    "2": {
+      "racer": 2,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -1818,
+      "y10": 48550,
+      "z10": 8821,
+      "dx10": 107,
+      "dy10": -261,
+      "dz10": 28,
+      "suppressed": 901,
+      "accepted_zero": 0,
+      "finished": 1,
+      "finish_position": 4
+    },
+    "3": {
+      "racer": 3,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -1642,
+      "y10": 48550,
+      "z10": 8055,
+      "dx10": 259,
+      "dy10": -257,
+      "dz10": 76,
+      "suppressed": 901,
+      "accepted_zero": 0,
+      "finished": 1,
+      "finish_position": 5
+    },
+    "1": {
+      "racer": 1,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -2013,
+      "y10": 48550,
+      "z10": 7153,
+      "dx10": 0,
+      "dy10": -244,
+      "dz10": 0,
+      "suppressed": 13,
+      "accepted_zero": 888,
+      "finished": 1,
+      "finish_position": 6
+    },
+    "4": {
+      "racer": 4,
+      "active_frames": 900,
+      "elapsed_ticks": 900,
+      "x10": -1881,
+      "y10": 48550,
+      "z10": 7985,
+      "dx10": -25,
+      "dy10": -260,
+      "dz10": -7,
+      "suppressed": 901,
+      "accepted_zero": 0,
+      "finished": 1,
+      "finish_position": 7
+    }
+  },
+  "closest_final_pair": {
+    "racers": [
+      5,
+      2
+    ],
+    "horizontal_distance": 23.2606964642076,
+    "distance_3d": 23.2606964642076
+  },
+  "guarded_human_startline_crossings": [
+    {
+      "tick": 317,
+      "human": 0,
+      "cp_before": 43,
+      "cp_after": 0,
+      "lap_before": 0,
+      "lap_after": 0,
+      "count_lap": 0,
+      "progress_before": -1,
+      "progress_after": 0,
+      "countdown_before": 0,
+      "lap0_ticks_before": 767,
+      "lap0_ticks_after": 770,
+      "tempo": 132,
+      "sequence": 57,
+      "pending": 0,
+      "playing": 1,
+      "x10": -41509,
+      "y10": 50,
+      "z10": 9425
+    },
+    {
+      "tick": 4044,
+      "human": 0,
+      "cp_before": 43,
+      "cp_after": 0,
+      "lap_before": 0,
+      "lap_after": 0,
+      "count_lap": 0,
+      "progress_before": -1,
+      "progress_after": 0,
+      "countdown_before": 0,
+      "lap0_ticks_before": 1026,
+      "lap0_ticks_after": 1029,
+      "tempo": 132,
+      "sequence": 57,
+      "pending": 0,
+      "playing": 1,
+      "x10": -41521,
+      "y10": 50,
+      "z10": 9364
+    }
+  ],
+  "normal_audio_observations": [
+    {
+      "sequence": 57,
+      "tempo": 132,
+      "boss_baseline": 132,
+      "speedup_latch": 0
+    },
+    {
+      "sequence": 57,
+      "tempo": 132,
+      "boss_baseline": 132,
+      "speedup_latch": 0
+    }
+  ],
+  "restart_scene_count": 2,
+  "render_handoff": {
+    "captured": 4344,
+    "transferred": 4344,
+    "fallback": 0,
+    "mismatch": 0,
+    "overflow": 0
+  },
+  "clean_stop": true,
+  "gui_exit_code": 0,
+  "no_progress_candidate_records": 0,
+  "candidate_zip_source_and_profile_bytes_preserved": true,
+  "full_log_sha256": "b83c9c24a8bef50e1f76e8ce4c959307e020a1fb1a0e98c700c062ae815e6698",
+  "limits": [
+    "Distant CPU passage and finish compatibility, not a close-up multi-racer wall-clearance test.",
+    "Parking permits native collision pushes/Y settling; final spacing samples do not prove no model overlap.",
+    "Human acceleration and start-line crossing plus restart tested; no full human race, steering/braking stress test or full second CPU finish run.",
+    "Music inspected through native sequence/tempo diagnostics; dummy audio output means sound quality was not heard.",
+    "Original model39 Tricky/Bluey and unrelated-course rejection covered by host regression tests, not a new runtime control run.",
+    "Repository guard passed; broader tooling blocked by existing non-executable scripts/agent_hooks/run. No whole-runtime host build run."
+  ],
+  "platform": "Official Linux DKR-R 1.0.15; software Vulkan; dummy audio",
+  "first_attempt": {
+    "status": "Interrupted and not counted as a pass",
+    "exit_code": 137,
+    "native_cpu_finishes_observed": 0,
+    "last_progress_tick": 917,
+    "human_start_line_crossings_at_tempo132": 1,
+    "cause": "Unverified. AppRun was killed and a browser renderer also failed. No physics or payload changes were made before the successful isolated retry.",
+    "log_sha256": "46abdb59e15435f50c401ba3ef9bc0cb7a2c881b6200497637a0bba14c17d4fd"
+  }
+}

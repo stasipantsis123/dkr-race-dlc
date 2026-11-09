@@ -1,0 +1,14 @@
+{
+  "file": "Tricky-Sprint-Companion-0.3.5.nrm",
+  "bytes": 20361,
+  "sha256": "73e1057fb3dbc717c342239740b5d8e3fb319870377c4d3c42f33ab303de1ebb",
+  "id": "dkr_standalone_sprint_finish_experimental",
+  "version": "0.3.5",
+  "minimum_recomp_version": "1.0.15",
+  "payload_sha256": {
+    "dkr.json": "3eae7b128f78b40a8e26a5b1a0f8e20ebade1efafc8df6224d4b015f0e428069",
+    "mod.json": "87934445fde99af06578fc100d12ccf8d03a96955309c3c5035ce03fab12eb91",
+    "mod_binary.bin": "2ba6f35a81bdad4441b08aad81b0b6b96982908de39ee1505ebc224e4aa016e8",
+    "mod_syms.bin": "1ed38431ec2c2a27f305d2b64c5c3cb5eb43b0bb43d3338d67ec94b3a3bf5562"
+  }
+}

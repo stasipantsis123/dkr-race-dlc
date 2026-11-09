@@ -7,3 +7,5 @@ df077b734f29eb28316489465b450ecfc5be56d4a15eab9626affb4d3b8845d5  Wizpig-I-USRev
 b30724131ab8b0087a80ae1700fa3efa6b13780f755b9293edc127cb4d096934  Smokey-Mountain-Race-v1.zip
 4d7942d3582a0242bbc9312c02aac073c631caa65e0a67dddc9e6b49892b3636  Wizpig-I-USRevA-Banana-AI-Clearance-Preview-r1.zip
 aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184  Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip
+6cb4b4e0f3acce4e4f37fdc623fdcaac57034508b7e9e39e4ef8e63dd52b2fde  packages/Tricky-Mountain-Race-v1.zip
+73e1057fb3dbc717c342239740b5d8e3fb319870377c4d3c42f33ab303de1ebb  packages/Tricky-Sprint-Companion-0.3.5.nrm

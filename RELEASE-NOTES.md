@@ -1,3 +1,11 @@
+# Tricky - Mountain Race v1
+
+An eight-racer, one-lap car sprint with the approved inner-cliff guardrail, 9 bananas across the original six stations, and restored native rolling-boulder triggers. All four course binary assets are identical to the approved r12 edition.
+
+Use the tested **DKR-R 1.0.15**, your own **US Rev A / v1.1 (`us.v80`)** game data, and offline play. Import both the [course ZIP](packages/Tricky-Mountain-Race-v1.zip?raw=1) and the separate [matching sprint companion 0.3.5](packages/Tricky-Sprint-Companion-0.3.5.nrm?raw=1). Enable the code, set its option to 1, and restart. Older companion 0.3.4 does not recognize the public v1 manifest.
+
+Targeted Linux 1.0.15 testing observed all seven native CPU finishes, post-line stop samples for all seven at 120, 360 and 900 active frames, and normal sequence-57 tempo 132 on human start-line crossings before and after a native restart; the game closed cleanly. Full human completion, close-up crowding, Windows gameplay, arbitrary mod combinations and multiplayer remain unqualified. Audio tempo checks do not establish audible sound quality. See [installation, rollback and complete limits](docs/TRICKY-V1.md) and [exact-byte validation](validation/TRICKY-V1.json).
+
 # Wizpig banana and AI-clearance preview updates
 
 2026-11-09: latest candidates for official DKR-R 1.0.15, US Rev A/v1.1 (us.v80). Both courses reduce 36 bananas to 18 at the same twelve stations, retaining six singles and six pairs. Wizpig I also adjusts 24 AI lane-height bytes at six start/finish-area controls. Other retained objects, balloons, headers, IDs and credits are unchanged.

@@ -190,5 +190,24 @@
     "forbidden_content": "none; exactly manifest, header and two object maps",
     "fresh_static_check": "PASS",
     "fresh_runtime_launch": "not performed for this publication; existing exact-candidate evidence summarized separately"
+  },
+  {
+    "course": "Tricky",
+    "file": "Tricky-Mountain-Race-v1.zip",
+    "bytes": 82508,
+    "sha256": "6cb4b4e0f3acce4e4f37fdc623fdcaac57034508b7e9e39e4ef8e63dd52b2fde",
+    "id": "tricky-standalone-race-us-v80",
+    "builtFrom": "us.v80",
+    "payload_sha256": {
+      "header.bin": "039b6baffcadb7bd8e29099f86f97af4af928c8e921c2391975576b93170dcd8",
+      "manifest.json": "6b5bd50f2c32b86cfd250f5685c3084dcc7235dda341fc87286056527d6f6df0",
+      "model.bin": "f2a48d8f6727e9471924c54fc238b5edbdcd575394cab9e3d3094f378c85a9f6",
+      "objects_collectables.bin": "1959317d4baa6e0f2def24409260c66f203d7f1358a69227ca5b625c1705e47a",
+      "objects_structure.bin": "e117419a3bdaee49565b3d2dd41011ef438e2e0914b0b6076efff7c38fb61cb6"
+    },
+    "binary_assets_identical_to_r12": true,
+    "required_companion": "Tricky-Sprint-Companion-0.3.5.nrm",
+    "catalogue_content_sha256": "2b427d3291986d70633b8b72225756bd2b75148605bea2893c874198fbd45245",
+    "runtime_status": "PASS: targeted Linux 1.0.15 native CPU finish/stop/restart check; see TRICKY-V1-RUNTIME.json"
   }
 ]

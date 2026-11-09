@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "catalogue_content_sha256": "2b427d3291986d70633b8b72225756bd2b75148605bea2893c874198fbd45245",
+  "zip_sha256": "6cb4b4e0f3acce4e4f37fdc623fdcaac57034508b7e9e39e4ef8e63dd52b2fde",
+  "zip_bytes": 82508,
+  "binary_assets_unchanged": true,
+  "course_files": {
+    "header.bin": "039b6baffcadb7bd8e29099f86f97af4af928c8e921c2391975576b93170dcd8",
+    "manifest.json": "6b5bd50f2c32b86cfd250f5685c3084dcc7235dda341fc87286056527d6f6df0",
+    "model.bin": "f2a48d8f6727e9471924c54fc238b5edbdcd575394cab9e3d3094f378c85a9f6",
+    "objects_collectables.bin": "1959317d4baa6e0f2def24409260c66f203d7f1358a69227ca5b625c1705e47a",
+    "objects_structure.bin": "e117419a3bdaee49565b3d2dd41011ef438e2e0914b0b6076efff7c38fb61cb6"
+  },
+  "runtime_status": "PASS: targeted exact-byte Linux 1.0.15 check; see runtime record and stated limits.",
+  "companion_version": "0.3.5",
+  "companion_sha256": "73e1057fb3dbc717c342239740b5d8e3fb319870377c4d3c42f33ab303de1ebb",
+  "host_regression_cases": 1551,
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "repeated_prior_regression_suites_included": true,
+  "reproducible_builds": 2,
+  "repository_guard": {
+    "problems": 0,
+    "baseline_findings": 1409
+  },
+  "broader_tooling": "Blocked by existing non-executable scripts/agent_hooks/run; not bypassed. No first-party runtime code changed or full runtime build attempted.",
+  "windows_gameplay_verified": false,
+  "screenshot": "User-supplied gameplay image; does not prove post-finish stopping.",
+  "course_binary_assets_identical_to_approved_r12": true,
+  "limits": [
+    "Offline US v80 only; online and multiplayer unqualified.",
+    "Not a full human course acceptance or close-up wall/crowding test.",
+    "Native collision pushes and vertical settling remain; no no-overlap guarantee.",
+    "Cloud audio uses dummy output; sequence and tempo diagnostics are not audible-quality validation."
+  ],
+  "runtime_record": "TRICKY-V1-RUNTIME.json"
+}
