@@ -2,6 +2,16 @@
 
 Unofficial custom race packages for DKR-R.
 
+## Taj I, II and III v1
+
+Standalone eight-racer courses for **DKR-R 1.0.15 / US Rev A (`us.v80`)**, with the latest pickup rows, all four world-entry gates frozen closed, and the native stone Wizpig head restored as inert scenery.
+
+- [Taj I - Five-Lap Car Race v1](packages/Taj-I-Five-Lap-Car-Race-v1.zip?raw=1)
+- [Taj II - Hovercraft Race v1](packages/Taj-II-Hovercraft-Race-v1.zip?raw=1)
+- [Taj III - Plane Race v1](packages/Taj-III-Plane-Race-v1.zip?raw=1)
+
+The exact downloads passed ordinary Linux race checks with all seven CPUs finishing each course. No companion mod is required. [Installation, screenshots, validation and limits](TAJ-I-II-III-V1.md).
+
 ## Current preview: Wizpig mixed-track compatibility
 
 Ordinary-race conversions of Wizpig I and Wizpig II for **DKR-R 1.0.14** with **US Rev A / v1.1 (`us.v80`)** game data. These updated packages are intended to run in the **same profile as your other custom tracks**. No replacement executable or companion code mod is required.
@@ -61,6 +71,6 @@ Based on the Wizpig courses in *Diddy Kong Racing*, developed by Rare and publis
 
 The manifests retain the existing preparation author, **“Local preparation.”** Repository ownership does not imply authorship of the original game or courses.
 
-The current packages contain manifests, modified track headers and object maps. No full ROM, executable, source game models, textures or music is included. Original game content remains subject to its existing rights; this repository grants no license to that content.
+The Wizpig preview packages contain manifests, modified track headers and object maps. The Taj v1 packages also include adapted native level geometry with restored gate and head meshes. No full ROM, executable, external texture pack or music is included. Original game content remains subject to its existing rights; this repository grants no license to that content.
 
 This repository is a package release and validation record, not a complete build-source distribution. No open-source license has been declared for the track packages.

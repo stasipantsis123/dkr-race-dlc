@@ -1,0 +1,81 @@
+{
+  "version": "1",
+  "tested_runtime": "Official DKR-R 1.0.15 Linux, us.v80",
+  "packages": [
+    {
+      "package": "packages/Taj-I-Five-Lap-Car-Race-v1.zip",
+      "sha256": "64cf112cd48e9166fdd6b98cd0f57d1930d3799361096d2e331b98fdea6950e6",
+      "byte_identical_to_tested_scenery_candidate": true,
+      "member_sha256": {
+        "header.bin": "d5624e20843a6223dc3c03c68d48ddd74053e1b6f0dbae2ec95f3cc0a09fc28c",
+        "objects_structure.bin": "2a92ad2003dd3618e1754071dd3386d060a24b626dd52102208d0179c7c718b6",
+        "objects_collectables.bin": "5baed1cba7a929496a0402a61a4cf17a9a235d8a7a74ad14aa8719fdd32fe5e6",
+        "manifest.json": "252f3da1f7b588a4c368a406f96175a9c4c6c2abd30ada3d38a7c4432fec4d65",
+        "model.bin": "037c522d8bf5ef5f1dc6c572b3283835bf05eb0bbb57f84c837e73b4d25b4c18"
+      },
+      "vehicle": "0",
+      "laps": "5",
+      "eight_racers_observed": true,
+      "all_seven_cpu_finished": true,
+      "clean_stop": true,
+      "renderer_handoff": [
+        "[render][handoff-summary] captured=2099 transferred=2099 fallback=0 mismatch=0 overflow=0; original SP/DP completion retained"
+      ],
+      "runtime_log_sha256": "c5e5fa11458d840bbc7485d4ecb4913ce58f9d68cf69b5fc89175c28b39591db"
+    },
+    {
+      "package": "packages/Taj-II-Hovercraft-Race-v1.zip",
+      "sha256": "551ca5d67cc60483b459723c4f53f6a27518b050586b294fe6ffd7782fa70738",
+      "byte_identical_to_tested_scenery_candidate": true,
+      "member_sha256": {
+        "objects_collectables.bin": "d177a78e53b39c8c83919c7b41af128496db0c87c9252e6292a8e2dcd93d0d0f",
+        "objects_structure.bin": "fd9546b5404b060078f56c59c835a8f4b778d6f5f66c0e8b464d2764826617ab",
+        "header.bin": "15b04ecbb1136558ccf131f5e42016a57b8fd4eb36051ddcc463dd9772a5e04d",
+        "manifest.json": "7fe874919f2327d78fe12a1272ad9b0341adae748b29a2130a5ca6c4c0f03e75",
+        "model.bin": "037c522d8bf5ef5f1dc6c572b3283835bf05eb0bbb57f84c837e73b4d25b4c18"
+      },
+      "vehicle": "1",
+      "laps": "3",
+      "eight_racers_observed": true,
+      "all_seven_cpu_finished": true,
+      "clean_stop": true,
+      "renderer_handoff": [
+        "[render][handoff-summary] captured=2701 transferred=2701 fallback=0 mismatch=0 overflow=0; original SP/DP completion retained"
+      ],
+      "runtime_log_sha256": "381c1f1a4c16f1b30c6210b9e27ddabe634be606f680e34e9f592fe8dd3d4f8f"
+    },
+    {
+      "package": "packages/Taj-III-Plane-Race-v1.zip",
+      "sha256": "572c3a61a47df53c79acde306b0810c07aced5f18a8afe478aacf52206128b1e",
+      "byte_identical_to_tested_scenery_candidate": true,
+      "member_sha256": {
+        "objects_collectables.bin": "214c42fde0bb123f793ee1a303994b1b97c937489d7e91fa77a15e7a77db05d5",
+        "objects_structure.bin": "4a363667c4e6adee0c29c14334194e886d8d544102480c83c512a880d682fe37",
+        "header.bin": "9eb255b2efafb7434ca9d6329ebb4feb8910eddc16ada43a2c687590191e4ece",
+        "manifest.json": "2231d3517053c03f927c0b760f492cbdd01de5932b3f5dc75b12eceee2cff422",
+        "model.bin": "037c522d8bf5ef5f1dc6c572b3283835bf05eb0bbb57f84c837e73b4d25b4c18"
+      },
+      "vehicle": "2",
+      "laps": "3",
+      "eight_racers_observed": true,
+      "all_seven_cpu_finished": true,
+      "clean_stop": true,
+      "renderer_handoff": [
+        "[render][handoff-summary] captured=2186 transferred=2186 fallback=0 mismatch=0 overflow=0; original SP/DP completion retained"
+      ],
+      "runtime_log_sha256": "4cc11ef4a0488e9af2a9ef35d61af4a47ca7a5227d6d378ddb2ec2994d71fe05"
+    }
+  ],
+  "scenery": "Eight native gate leaves frozen closed and native stone Wizpig head. Inert course geometry; no Adventure door or unlock logic.",
+  "unchanged_from_pickup_candidates": [
+    "header.bin",
+    "objects_structure.bin",
+    "objects_collectables.bin"
+  ],
+  "screenshots": "User-supplied gameplay images. Course identity and vehicle/lap count agree; exact build identity cannot be established from images alone.",
+  "limits": [
+    "Not every human driving line or pickup lane was tested",
+    "Human-finished results and restart not tested in this pass",
+    "Windows and multiplayer not tested"
+  ]
+}
