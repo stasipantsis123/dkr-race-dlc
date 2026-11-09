@@ -1,44 +1,55 @@
 # Taj I, II and III v1
 
-Three standalone, eight-racer Taj courses for official **DKR-R 1.0.15** and your own **US Rev A/v1.1 (`us.v80`)** game data. No companion code mod or replacement executable is required.
+Taj's routes around Timber's Island, now with a full eight-racer grid. Pick the car, hovercraft or plane, with rows of balloons giving you a choice of items along the way.
 
-## Downloads
+The stone Wizpig head and all four world entrances are back too. Dino Domain, Snowflake Mountain, Sherbet Island and Dragon Forest keep their closed gates and original balloon numbers. They're scenery here: the gates stay solid and won't open, warp you away or trigger Adventure dialogue, cutscenes, unlocks or save progress.
 
-- [Taj I - Five-Lap Car Race v1](packages/Taj-I-Five-Lap-Car-Race-v1.zip?raw=1): five laps, four rows of four balloon choices in mixed color orders, and 17 bananas in five singles and six pairs.
-- [Taj II - Hovercraft Race v1](packages/Taj-II-Hovercraft-Race-v1.zip?raw=1): three laps, six rows of four balloon choices, and 9 bananas in three singles and three pairs.
-- [Taj III - Plane Race v1](packages/Taj-III-Plane-Race-v1.zip?raw=1): three laps, six rows of four balloon choices, and 9 bananas in three singles and three pairs.
+## Choose your race
 
-All three restore the native stone Wizpig head and the four world entrances: Dino Domain, Snowflake Mountain, Sherbet Island and Dragon Forest. The gates stay closed with fixed native balloon numbers. The restored assets are inert course geometry, with no Adventure opening, unlock, dialogue, warp, cutscene or save-progress behavior. The closed gates retain solid collision.
+- [Taj I - Five-Lap Car Race v1](packages/Taj-I-Five-Lap-Car-Race-v1.zip?raw=1): five laps, four rows of four balloons in mixed colour orders, and 17 bananas split into five singles and six pairs.
+- [Taj II - Hovercraft Race v1](packages/Taj-II-Hovercraft-Race-v1.zip?raw=1): three laps, six rows of four balloons, and 9 bananas split into three singles and three pairs.
+- [Taj III - Plane Race v1](packages/Taj-III-Plane-Race-v1.zip?raw=1): three laps, six rows of four balloons, and 9 bananas split into three singles and three pairs.
 
-The v1 downloads are byte-for-byte copies of the tested scenery/pickup candidates, with public download filenames. Course IDs, names and preparation credits are unchanged. Headers and both object maps match the preceding pickup-row builds exactly; the scenery addition preserves their starts, checkpoints, lap counts, vehicles and pickups.
+Use official **DKR-R 1.0.15** with your own **US Rev A/v1.1 (`us.v80`)** game data. No companion code mod or replacement executable is needed.
 
 ## Install
 
 1. Use the complete official DKR-R 1.0.15 package with your own compatible ROM.
-2. Download each individual course ZIP above. Do not import the whole repository ZIP.
-3. Close the game and keep a backup of any previous matching Taj package.
-4. Import through **Mods / Hacks > Import mods > DKR-R tracks**.
-5. Replace only the matching course ID. Keep one version of each enabled, preserve saves and unrelated mods, and enable session mods.
+2. Download the individual ZIPs you want. Don't import the whole repository ZIP.
+3. Close the game and back up any older version of the Taj course you're replacing.
+4. Start DKR-R, open **Mods / Hacks > Import mods > DKR-R tracks** and import each ZIP.
+5. Keep one version of each course enabled, leave your saves and unrelated mods in place, and turn Session mods ON.
 
-The IDs are `taj1-five-lap-car-race-us-v80`, `taj2-standalone-race-us-v80` and `taj3-standalone-race-us-v80`. Restore your previous matching ZIP to roll back.
+The course IDs are `taj1-five-lap-car-race-us-v80`, `taj2-standalone-race-us-v80` and `taj3-standalone-race-us-v80`. To go back, restore the previous ZIP for the matching course.
 
-## Verification and limits
+## What was tested?
 
-The exact delivered files loaded eight racers in ordinary Linux races. All seven CPU racers finished each course at its intended lap count. All three stopped cleanly with no renderer handoff fallback, mismatch or overflow.
+All three downloads loaded eight racers into ordinary Linux races, and all seven CPUs finished at the right lap count. Each test closed cleanly, with no renderer handoff fallback, mismatch or overflow.
 
-All four closed gates and the full stone head were visually inspected. The Sherbet beach entrance was independently viewed in both Taj II and Taj III. Dino gate/frame contact left the gate closed without Adventure text or a course transition. Snowflake's original raised ledge was left unchanged; its inspection was visual, not a claim about reaching the door.
+The four closed gates and complete stone head were visually checked. Sherbet's beach entrance was checked separately in the hovercraft and plane courses. Contact with the Dino gate and frame left the gate shut, with no Adventure text or course transition. Snowflake's original raised ledge is unchanged; its door was checked visually, not tested for reachability.
 
-Archive hashes, model layout/round trips, fixed gate-number frames, render passes, engine limits and original collision relationships passed checks. The model's conservative runtime arena estimate is 371,616 of 535,040 bytes. Added collision passed checks against the actual stored facets, and diagnostic checkpoint chords crossed no added solid face. See [package and runtime validation](validation/TAJ-I-II-III-V1.json).
+Human finishes, every driving line and balloon lane, restarts, Windows, multiplayer, audio and other mod combinations still need testing.
 
-These checks do not qualify every human driving line or balloon lane, human-finished results, restart flows, Windows, multiplayer, audio or arbitrary mod combinations. The scenery inspection used disposable start-position fixtures; those are not in the downloads. The runtime used software Vulkan and dummy audio, so it is not target-machine performance or audio evidence.
+<details>
+<summary>Package checks and test details</summary>
+
+The downloads are identical to the tested scenery and pickup versions, apart from their public download filenames. Course IDs, names and preparation credits are unchanged. The headers and both object maps match the preceding pickup-row builds exactly, so the scenery addition leaves their starts, checkpoints, lap counts, vehicles and pickups alone.
+
+Checks passed for archive hashes, model layout and round trips, fixed gate-number frames, render passes, engine limits and original collision relationships. The conservative runtime arena estimate is 371,616 of 535,040 bytes. Added collision was checked against the stored facets, and the diagnostic checkpoint chords crossed no added solid face.
+
+The scenery inspection used temporary start-position test files. Those aren't in the downloads. Runtime tests used software Vulkan and dummy audio, so they don't establish performance on your machine or audible sound quality.
+
+[Package and runtime results](validation/TAJ-I-II-III-V1.json)
+
+</details>
 
 ## Screenshots
 
-The user-supplied images show the matching car, hovercraft and plane courses. They are gameplay illustrations, not proof of the exact package revision or every restored asset:
+- [Taj I: car](screenshots/taj-i-race-v1.png)
+- [Taj II: hovercraft](screenshots/taj-ii-race-v1.png)
+- [Taj III: plane](screenshots/taj-iii-race-v1.png)
 
-- [Taj I](screenshots/taj-i-race-v1.png)
-- [Taj II](screenshots/taj-ii-race-v1.png)
-- [Taj III](screenshots/taj-iii-race-v1.png)
+These supplied gameplay images show the matching courses. They don't verify the exact package revision or every restored piece of scenery.
 
 ## Credits and rights
 

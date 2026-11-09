@@ -1,47 +1,41 @@
-# Tricky - Mountain Race v1
+# What's changed
 
-An eight-racer, one-lap car sprint with the approved inner-cliff guardrail, 9 bananas across the original six stations, and restored native rolling-boulder triggers. All four course binary assets are identical to the approved r12 edition.
+## Tricky - Mountain Race v1
 
-Use the tested **DKR-R 1.0.15**, your own **US Rev A / v1.1 (`us.v80`)** game data, and offline play. Import both the [course ZIP](packages/Tricky-Mountain-Race-v1.zip?raw=1) and the separate [matching sprint companion 0.3.5](packages/Tricky-Sprint-Companion-0.3.5.nrm?raw=1). Enable the code, set its option to 1, and restart. Older companion 0.3.4 does not recognize the public v1 manifest.
+Tricky's mountain is now an eight-racer, one-lap car sprint. The rolling boulders are back, the inner-cliff guardrail is in place, and there are 9 bananas across the same six spots.
 
-Targeted Linux 1.0.15 testing observed all seven native CPU finishes, post-line stop samples for all seven at 120, 360 and 900 active frames, and normal sequence-57 tempo 132 on human start-line crossings before and after a native restart; the game closed cleanly. Full human completion, close-up crowding, Windows gameplay, arbitrary mod combinations and multiplayer remain unqualified. Audio tempo checks do not establish audible sound quality. See [installation, rollback and complete limits](docs/TRICKY-V1.md) and [exact-byte validation](validation/TRICKY-V1.json).
+You'll need the course ZIP **and sprint companion 0.3.5**. Version 0.3.4 won't recognise this public release. Enable 0.3.5, set its option to 1 and restart. Use DKR-R 1.0.15, your own US Rev A/v1.1 (`us.v80`) game data and offline play.
 
-# Wizpig banana and AI-clearance preview updates
+All seven CPUs finished in the Linux test, stopped after the line at the checked intervals, and the music tempo stayed normal before and after a restart. Full human races, close-up crowding, Windows, audible sound quality, other mod combinations and multiplayer still need testing.
 
-2026-11-09: latest candidates for official DKR-R 1.0.15, US Rev A/v1.1 (us.v80). Both courses reduce 36 bananas to 18 at the same twelve stations, retaining six singles and six pairs. Wizpig I also adjusts 24 AI lane-height bytes at six start/finish-area controls. Other retained objects, balloons, headers, IDs and credits are unchanged.
+[Downloads, setup and full test notes](docs/TRICKY-V1.md).
 
-Fresh static checks pass and exact candidate bytes have prior bounded Linux CPU-finish evidence. Full human races and Windows acceptance remain pending. Wizpig II's earlier intermittent CPU stall is unresolved; its sky is unchanged. No companion is required. [Complete changes, install/rollback instructions and limits](WIZPIG-PREVIEW-UPDATE.md).
+## Wizpig I and II preview updates
 
-# Bubbler and Smokey v1
+9 November 2026. Both courses now have 18 bananas instead of 36, spread across the same twelve spots as six singles and six pairs. Wizpig I also has a small AI route-height change around the start and finish. The balloons, grids, race settings, course IDs and credits stay the same.
 
-Published as individual native track ZIPs for official DKR-R 1.0.15, US Rev A/v1.1 (`us.v80`). Each preserves six banana stations but reduces the total from 18 to 9 (three singles, three pairs). Other course payloads, IDs and preparation credits remain unchanged.
+These previews are for DKR-R 1.0.15 and US Rev A/v1.1 (`us.v80`). No companion is needed. Package checks passed, and earlier Linux tests of these exact files recorded CPU finishes. Full human races and Windows testing are still to come. Wizpig II's occasional stuck CPU isn't fixed, and its sky is unchanged.
 
-Both exact archives passed static checks and 120-second Linux smoke tests. Acceleration worked and both games shut down cleanly. Bubbler logged seven CPU finishes; Smokey logged four before the cutoff. Full human races, Windows, multiplayer and audio were not qualified. Supplied screenshots predate thinning. See [full notes](BUBBLER-SMOKEY-V1.md).
+[Downloads, changes and known issues](WIZPIG-PREVIEW-UPDATE.md).
 
-# Retained Wizpig mixed-track compatibility baseline
+## Bubbler and Smokey v1
 
-DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`). These historical baseline package filenames contain `Catalogue-Naming-Test`; newer 1.0.15 preview updates are described above.
+Bubbler brings the hovercraft race; Smokey brings the plane race. Both now have 9 bananas instead of 18, with three singles and three pairs across the same six spots. Nothing else in the course data changed for this update, and neither needs a companion.
 
-## Compatibility change
+Use DKR-R 1.0.15 and US Rev A/v1.1 (`us.v80`). Both races loaded, responded to acceleration and closed cleanly in their two-minute Linux tests. Bubbler recorded all seven CPU finishes; Smokey recorded four before the test ended. Full human races, Windows, multiplayer and audio still need testing. The screenshots show the earlier banana layout.
 
-Both packages now use manifest/catalogue names rather than appending legacy `LEVEL_NAMES` data. This avoids the combined-name loader fault for these packages and allows the tested maps to coexist in one normal profile. No replacement executable or companion is required.
+[Downloads, setup and test notes](BUBBLER-SMOKEY-V1.md).
 
-The three race payload files, track IDs and existing credit are unchanged from r5. The only removed file is the unnecessary four-byte `name.bin`; its manifest entry was also removed.
+## Taj I, II and III v1
 
-## Actual mixed-game validation
+Three eight-racer versions of Taj's routes: five laps in the car, or three in the hovercraft or plane. Each has rows of balloon choices. The stone Wizpig head and all four world entrances are back as scenery, with the gates kept closed.
 
-Official Linux DKR-R 1.0.14 booted with Wizpig I, Wizpig II, Splashdown Pass, Strangled Shrine and both community HD packs enabled together. Wizpig I, Wizpig II and Strangled Shrine entered races with AI. Wizpig I accepted acceleration. Correct captions were observed for all four maps. Splashdown Pass's race was not entered.
+All seven CPUs finished each course in the Linux tests. These use DKR-R 1.0.15 and US Rev A/v1.1 (`us.v80`), with no companion required. Human finishes, restarts, Windows, multiplayer and audio still need testing.
 
-No asset-bounds error, map-load failure or crash occurred in the successful session. Full races, all pickups/checkpoints, audio, Windows and multiplayer remain untested in this pass. Arbitrary other mods are not covered. See [validation](validation/MIXED-GAME-VALIDATION.md).
+[Downloads, screenshots and full notes](TAJ-I-II-III-V1.md).
 
-## Retained r5 pickup changes
+## Older Wizpig releases
 
-- Wizpig I: all 12 balloon anchors were lowered by 38 units and all 36 banana anchors by 18 units. X/Z positions were unchanged.
-- Wizpig II: five added balloons were repositioned; minimum red/blue anchor separation increased from 509.51 to 806.68 units. Bananas, original balloons, hazards and scenery were unchanged.
-- Eight-racer grids, stationary starts and three laps remain unchanged.
+The 1.0.14 compatibility versions fixed a course-name loading problem when using the Wizpig tracks alongside other custom tracks. The earlier r5 releases adjusted pickup positions. Both sets are still available for rollback.
 
-## Upgrade and rollback
-
-Import the two new individual ZIPs into your existing profile and replace only the matching Wizpig IDs. Keep unrelated mods and saves. Do not enable duplicate revisions. Old r5 archives are retained only for rollback; their separate-profile limitation does not apply to the current preview's tested combination.
-
-Based on *Diddy Kong Racing* by Rare/Nintendo. Preparation credit remains “Local preparation.” No official affiliation, endorsement or license to original game content is claimed.
+[Older downloads, exact changes and test history](docs/WIZPIG-1.0.14.md).

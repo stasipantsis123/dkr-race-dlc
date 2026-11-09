@@ -1,60 +1,75 @@
-# Wizpig I and Wizpig II preview updates
+# Wizpig I and II preview updates
 
-Published for community playtesting on 2026-11-09. Use official **DKR-R 1.0.15** with your own **US Rev A / v1.1 (us.v80)** game data.
+Wizpig's courses with a full racing grid: eight racers, three laps, a stationary start and all five balloon colours. Take the car through Wizpig I or the plane through Wizpig II.
 
-These are the latest reviewed candidates, not a claim of full gameplay qualification. Both course ZIPs are byte-for-byte copies of the exact tested candidates; only their download filenames were made suitable for a public preview. Neither requires a companion.
+These previews were published on **9 November 2026** for official **DKR-R 1.0.15** and your own **US Rev A / v1.1 (`us.v80`)** game data. Neither needs a companion mod.
 
 ## Download
 
-- [Wizpig I banana and AI-clearance preview r1](packages/Wizpig-I-USRevA-Banana-AI-Clearance-Preview-r1.zip?raw=1), 2,149 bytes.
-- [Wizpig II banana-balance preview r1](packages/Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip?raw=1), 3,295 bytes.
-- [Exact archive and payload checks](validation/wizpig-preview-r1/PACKAGE-CHECKS.json).
+- [Wizpig I preview r1](packages/Wizpig-I-USRevA-Banana-AI-Clearance-Preview-r1.zip?raw=1), 2,149 bytes.
+- [Wizpig II preview r1](packages/Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip?raw=1), 3,295 bytes.
 
-Import each individual course ZIP, not the repository ZIP. Close the game, back up the previous matching package and saves, then replace only the matching Wizpig course. Keep exactly one enabled revision per ID. Keep unrelated maps, mods and saves. Original catalogue-compatible archives remain in packages for rollback.
+Both now have 18 bananas instead of 36, at the same twelve spots: six singles and six pairs. That layout stays the same each race.
 
-IDs remain wizpig1-ordinary-race-us-v80 and wizpig2-ordinary-race-us-v80. Visible names remain Wizpig I - Race and Wizpig II - Race. Manifests, credits, eight-racer grids, stationary starts and three-lap race headers are unchanged.
+**Wizpig II still has an occasional stuck CPU, and this update doesn't change its sky.** These are playtest previews; full human races and Windows gameplay still need checking.
 
-## Wizpig I changes
+## What's changed?
 
-- 36 bananas reduced to 18 across the same 12 stations: six singles and six pairs. This is a fixed varied layout, not new randomness each race. Surviving pickup records and positions are unchanged.
-- All 12 balloons remain unchanged.
-- Local AI lane-height adjustment at six flat start/finish-area checkpoint controls: 24 signed bytes changed from 0 to 5, adding 10 world units at those controls. Neighboring spline sections are also affected by interpolation.
-- Human checkpoint planes, start grid and road geometry are unchanged.
+### Wizpig I
 
-Recorded official Linux 1.0.15 testing found all seven CPUs completed three laps in an idle-grid test. A fresh matched banana-only control reproduced seven below-road stalls, with only the 24 lane-height bytes differing among the controlled inputs. A later moved-then-no-input nearby-player test also had seven finishes.
+Along with fewer bananas, there's a small AI route-height adjustment around six flat start/finish checkpoint controls. All 12 balloons stay in place, and the human checkpoint planes, starting grid and road geometry are unchanged.
 
-These bounded cloud runs used uncontrolled random state. They support the local change under those tested conditions, not deterministic causality or a general AI fix. Nearby-player movement timing and endpoint differed from the historical failure, and later human drift occurred. Other unchanged low/airborne route sections, physical versus distant AI, collisions and lane transitions remain unqualified.
+Linux tests recorded all seven CPUs finishing three laps, both with the player idle at the grid and in a later run where the player moved nearby first. That supports this local adjustment in those tests, but it isn't a fix for every AI problem or every part of the route.
 
-## Wizpig II changes
+### Wizpig II
 
-- 36 bananas reduced to 18 across the same 12 stations: six singles and six pairs.
-- Only banana records were deleted. Surviving positions and records, all 34 balloons, other objects, header, checkpoints, starting grid, geometry and sky are unchanged.
-- **There is no skybox-speed fix in this update.** Logged animation rates were essentially stock in a matched study; rendered/perceived sky speed remains open.
+Only bananas were removed. All 34 balloons, the other objects, checkpoints, grid, geometry and sky stay as they were.
 
-Recorded official Linux 1.0.15 testing included a fresh idle-start run with seven native three-lap CPU finishes. A separate mixed run also had seven finishes with ten courses admitted and both community HD packs loaded. The other nine courses were not all raced. An experimental sprint companion was enabled in that mixed run, but no scoped finish/parking/music intervention was observed; that is not a trace of every native write.
+Linux tests recorded seven CPU finishes in a fresh idle-start run and in a separate mixed-mod run. **An earlier run still left CPU 6 stuck at lap 2, checkpoint 4.** The later successful runs don't mean that problem is fixed.
 
-**An earlier revised idle-start run stalled CPU 6 at lap 2/checkpoint 4. That intermittent failure remains unresolved.** Later successful runs do not prove it fixed. Random state was not controlled, so no failure-rate claim is made.
+There's no skybox-speed fix here. A matched study logged animation rates close to stock, but how fast the sky looks in motion still needs checking.
 
-## Validation and remaining playtests
+## Install or update
 
-Fresh publication checks passed ZIP integrity, exact source archive identity, payload hashes, unchanged IDs and manifests, banana deletion-only preservation, six single/six pair station counts, balloon preservation, and the precise Wizpig I structure-byte change. Every archive contains exactly four files: manifest, header and two object maps. No ROM, executable, private profile, save, observer, companion, model, texture or music file is included.
+1. Download each individual course ZIP, not the whole repository ZIP.
+2. Close the game and back up the older matching package and your saves.
+3. Start DKR-R, import the course through Custom Tracks and replace only the matching Wizpig course.
+4. Keep one version of each course enabled and turn Session mods ON. Leave your other maps, mods and saves in place.
 
-No new runtime test was performed solely for publication. Prior runtime evidence applies to the exact unchanged candidate bytes, as summarized above. No full human-driven race, all-pickup/balloon-upgrade qualification, Windows acceptance, audio, multiplayer or universal mod compatibility is claimed.
+The IDs are still `wizpig1-ordinary-race-us-v80` and `wizpig2-ordinary-race-us-v80`. They'll appear as **Wizpig I - Race** and **Wizpig II - Race**. The manifests, credits, eight-racer grids, stationary starts and three-lap settings are unchanged.
 
-Please test:
-1. Replacement and exactly one listing per course.
-2. A full three-lap human race, checkpoint/lap counting, finish and restart.
-3. All banana stations and balloon upgrades.
-4. Seven CPU finishes across fresh starts and restarts, including idle starts.
-5. Wizpig I AI road contact near the changed approaches and neighboring sections.
-6. Windows behavior and Wizpig II perceived sky motion against stock under matched conditions.
+The older catalogue-compatible ZIPs are still in `packages` if you need to go back. See the [older-version notes](docs/WIZPIG-1.0.14.md) for their setup.
 
-Report game version, operating system, enabled mods, course, lap and checkpoint/landmark. Roll back to the retained original if behavior is unsuitable.
+## Giving them a playtest?
 
-## Integrity
+Check that each course appears once, then try a full three-lap race, a finish and a restart. Banana collection, balloon upgrades and checkpoint/lap counting all need a proper human playthrough.
 
-Wizpig I SHA-256: 4d7942d3582a0242bbc9312c02aac073c631caa65e0a67dddc9e6b49892b3636
+It also helps to check whether all seven CPUs finish across fresh starts and restarts, including when you stay idle at the start. On Wizpig I, watch their contact with the road around the changed approaches and nearby sections. On Wizpig II, compare the sky's movement with stock under the same conditions.
 
-Wizpig II SHA-256: aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184
+If something goes wrong, include your game version, operating system, enabled mods, course, lap and checkpoint or nearby landmark. Restore the older course if this version isn't working for you.
+
+Audio, multiplayer and every possible mod combination haven't been verified either.
+
+<details>
+<summary>Package checks and detailed test history</summary>
+
+Both ZIPs are identical to the tested candidates; only the public download filenames changed. No new runtime test was done just for publication. The earlier runtime results below apply to these exact files.
+
+Fresh checks passed for ZIP integrity, source archive identity, payload hashes, unchanged IDs and manifests, banana-only deletions, the six single/six pair layout, balloon preservation and the precise Wizpig I structure-byte change. Surviving pickup records and positions are unchanged. Each archive contains four files: a manifest, a header and two object maps. No ROM, executable, private profile, save, observer, companion, model, texture or music file is included.
+
+For Wizpig I, 24 signed AI lane-height bytes changed from 0 to 5, adding 10 world units at six start/finish-area controls. Interpolation also affects neighbouring spline sections. A fresh banana-only comparison run reproduced seven below-road stalls; only those 24 bytes differed among the controlled inputs. Random state wasn't controlled, so this doesn't establish deterministic cause and effect. The later nearby-player run also differed from the historical failure in when and where the player moved, and the human racer drifted later. Other unchanged low or airborne sections, physical versus distant AI, collisions and lane transitions still need testing.
+
+The mixed Wizpig II run had ten courses admitted and both community HD packs loaded. The other nine courses weren't all raced. An experimental sprint companion was enabled, but no scoped finish, parking or music intervention was observed. That observation isn't a trace of every native write. Random state wasn't controlled, so these runs don't establish a failure rate.
+
+No full human-driven race, complete pickup/balloon-upgrade test, Windows acceptance, audio, multiplayer or universal mod compatibility has been established.
+
+[Exact archive and payload checks](validation/wizpig-preview-r1/PACKAGE-CHECKS.json)
+
+</details>
+
+## File checksums
+
+- Wizpig I SHA-256: `4d7942d3582a0242bbc9312c02aac073c631caa65e0a67dddc9e6b49892b3636`
+- Wizpig II SHA-256: `aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184`
 
 Based on Diddy Kong Racing by Rare/Nintendo. Existing preparation credit remains "Local preparation." Unofficial; no affiliation, endorsement or license to original game content is claimed.

@@ -1,32 +1,48 @@
 # Tricky - Mountain Race v1
 
-An eight-racer, one-lap car sprint based on the original Tricky course. This release keeps the approved inner-cliff invisible guardrail, reduces the bananas from 18 to 9 across the original six stations, and restores both native boulder activation triggers. The original route, start grid and checkpoints are unchanged.
+One lap up Tricky's mountain, with seven other racers and the original rolling boulders to deal with. This car sprint keeps the original route, starting grid and checkpoints, adds an invisible guardrail along the inner cliff, and has 9 bananas across the same six spots instead of 18.
 
-## Downloads and requirements
+## Get both downloads
 
-- Course: [Tricky-Mountain-Race-v1.zip](../packages/Tricky-Mountain-Race-v1.zip?raw=1)
-- Matching companion: [Tricky-Sprint-Companion-0.3.5.nrm](../packages/Tricky-Sprint-Companion-0.3.5.nrm?raw=1)
-- DKR-R 1.0.15 (the tested release; companion minimum 1.0.15) and the player's own US Rev A / v1.1 (`us.v80`) game data.
-- Offline play only. Online and multiplayer behavior are not qualified.
+- [Tricky course ZIP](../packages/Tricky-Mountain-Race-v1.zip?raw=1)
+- [Sprint companion 0.3.5](../packages/Tricky-Sprint-Companion-0.3.5.nrm?raw=1)
 
-The companion supports native CPU finishing, post-line stopping and normal-speed sprint music for the exact public v1 package. Older companion 0.3.4 does not recognize this public manifest. If the companion is absent or disabled, racers may continue driving after finishing; the guardrail is not a substitute for the companion. The course binaries are identical to the approved r12 course; only descriptive manifest wording changed for publication.
+Use **DKR-R 1.0.15** and your own **US Rev A / v1.1 (`us.v80`)** game data. That's the tested game version and the companion's minimum requirement. **Play offline**; online and multiplayer haven't been verified.
+
+The companion lets CPUs finish and stop after the line, and keeps the sprint music at normal speed. **Version 0.3.4 won't recognise this public course.** Without the matching companion enabled, racers may carry on driving after finishing. The guardrail doesn't replace it.
 
 ## Install
 
-1. Close DKR-R and back up the existing Tricky course and saves.
-2. Import the course ZIP using Custom Tracks. Replace only the existing `tricky-standalone-race-us-v80` course, keeping one revision enabled. Do not rename the ZIP to `.dkrmap`.
-3. Open **Installed Mods → MY MODS → CUSTOM MAGIC CODES** and import the NRM, replacing the earlier `dkr_standalone_sprint_finish_experimental` companion. Use the **All** filter: **On** hides a newly imported, disabled code. Open **Details**, select **I trust this code mod**, then **Approve code** and enable it for the next game. Set its numeric option to **1** and turn Session mods ON. The separate **MAGIC CODES** panel is for stock cheats, not imported NRM files.
-4. Restart the game after changing the code. Keep unrelated courses and saves in place.
+1. Close DKR-R and back up your existing Tricky course and saves.
+2. Start DKR-R and import the course ZIP through Custom Tracks. Replace only `tricky-standalone-race-us-v80`, and keep one version enabled. Leave the file as a ZIP; don't rename it to `.dkrmap`.
+3. Open **Installed Mods → MY MODS → CUSTOM MAGIC CODES** and import the companion NRM. Replace the earlier `dkr_standalone_sprint_finish_experimental` companion.
+4. Choose the **All** filter. The **On** filter hides newly imported codes because they start disabled. Open **Details**, select **I trust this code mod**, choose **Approve code**, then enable it for the next game.
+5. Set the companion's numeric option to **1**, turn Session mods ON, and restart the game.
 
-Do not import a combined repository ZIP as a course. The course and companion are separate imports. To roll back, close the game and restore the previous Tricky course and matching companion. Do not keep both versions of the same logical course enabled.
+The separate **MAGIC CODES** panel is for stock cheats, not imported NRM files. The course and companion need separate imports, and GitHub's whole-repository ZIP won't work as a course.
 
-## Validation and limitations
+Keep your other courses and saves in place. To go back, close the game and restore the previous Tricky course **and its matching companion**. Don't leave two versions of the same course enabled.
 
-See [the exact-byte validation record](../validation/TRICKY-V1.json). The matching companion passed 1,551 host regression cases with AddressSanitizer and UndefinedBehaviorSanitizer and two byte-identical builds. This includes repeated prior regression suites, not 1,551 distinct unique behaviors. Content checks reject changed hashes and invalid model allocations while retaining the original identity, node, terminal, actor and native-result guards.
+## What was tested?
 
-Targeted Linux 1.0.15 testing observed all seven native CPU finishes, post-line stop samples for all seven at 120, 360 and 900 active frames, and normal sequence-57 tempo 132 on human start-line crossings before and after a native restart; the game closed cleanly. The exact public course and companion bytes were used in that run. Prior exact r12/0.3.4 cloud checks observed all seven native CPU finishes and stop samples at 120, 360 and 900 active frames, plus normal music tempo before and after a native restart. The independent r12 boulder check exercised both original activation paths. The first public-pair attempt was interrupted with exit 137 before CPU finishes; no cause was established. The unchanged fresh-profile retry completed the stated checks and exited normally. The publication screenshot was supplied by the player; it does not prove a finished Windows race.
+In the Linux 1.0.15 run, all seven CPUs finished. Checks after the finish line found all seven stopped at 120, 360 and 900 active frames. Music tempo stayed normal when the human racer crossed the start line, both before and after a native restart. The game closed cleanly.
 
-No full Windows gameplay test is claimed. Cloud checks use software rendering and dummy audio; tempo diagnostics do not establish audible quality. Close-up crowding, every wall approach, full human completion, arbitrary mod combinations and multiplayer remain unqualified. Parking retains native collision pushes and vertical settling, so a stop sample does not promise zero visible overlap.
+Full human completion, close-up crowding, every wall approach, Windows gameplay, other mod combinations and multiplayer still need testing. Racers can still push against each other and settle vertically after parking, so those stop checks don't promise that you'll never see overlap. The audio checks measured tempo, not how it sounds.
+
+<details>
+<summary>Package checks and test details</summary>
+
+All four course binary assets are identical to the approved r12 course. Only the descriptive wording in the manifest changed for publication. Both original boulder activation paths were exercised in the independent r12 check.
+
+The companion passed 1,551 host regression cases with AddressSanitizer and UndefinedBehaviorSanitizer, and two builds produced identical files. That count includes repeated regression suites, not 1,551 different behaviours. Checks reject changed content hashes and invalid model allocations while keeping the original identity, node, terminal, actor and native-result guards.
+
+The Linux run above used the exact public course and companion files. The music diagnostic recorded sequence 57 at tempo 132 on human start-line crossings before and after the restart. Earlier r12/0.3.4 cloud checks also recorded seven native CPU finishes, stop samples at 120, 360 and 900 active frames, and normal music tempo before and after a native restart.
+
+The first public-pair attempt ended with exit 137 before any CPU finishes; the cause wasn't established. An unchanged retry in a fresh profile completed the checks and exited normally. Cloud tests used software rendering and dummy audio, so they don't establish audible quality. The player-supplied publication screenshot doesn't prove a completed Windows race.
+
+[Exact-file validation record](../validation/TRICKY-V1.json)
+
+</details>
 
 ## Credits and rights
 
