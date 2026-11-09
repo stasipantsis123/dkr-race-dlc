@@ -26,13 +26,26 @@ Standalone eight-racer courses for **DKR-R 1.0.15 / US Rev A (`us.v80`)**, with 
 
 The exact downloads passed ordinary Linux race checks with all seven CPUs finishing each course. No companion mod is required. [Installation, screenshots, validation and limits](TAJ-I-II-III-V1.md).
 
-## Current preview: Wizpig mixed-track compatibility
+## Latest Wizpig preview updates
+
+For **DKR-R 1.0.15 / US Rev A (us.v80)**:
+
+- [Wizpig I: bananas and local AI clearance](packages/Wizpig-I-USRevA-Banana-AI-Clearance-Preview-r1.zip?raw=1).
+- [Wizpig II: banana balance](packages/Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip?raw=1).
+
+Both now have 18 bananas at the same 12 stations: six singles and six pairs. Wizpig I also has a small start/finish-area AI lane-height adjustment. IDs, headers, grids and balloons are retained; replace the matching course rather than enabling duplicates.
+
+**Playtest preview:** exact candidate bytes passed fresh static checks and earlier bounded Linux CPU-finish tests. Full human races, Windows, audio and multiplayer remain unqualified. Wizpig II's earlier intermittent CPU stall remains unresolved, and **its sky is unchanged**. [Changes, installation, evidence and limitations](WIZPIG-PREVIEW-UPDATE.md).
+
+## Retained Wizpig compatibility baseline
+
+The following section records the older catalogue-compatible packages and their 1.0.14 tests. Use the latest preview links above for the 1.0.15 banana/AI updates; these older ZIPs remain available for rollback.
 
 Ordinary-race conversions of Wizpig I and Wizpig II for **DKR-R 1.0.14** with **US Rev A / v1.1 (`us.v80`)** game data. These updated packages are intended to run in the **same profile as your other custom tracks**. No replacement executable or companion code mod is required.
 
 **Preview status:** real Linux race entry passed with both Wizpig maps, Splashdown Pass, Strangled Shrine and both community HD texture packs enabled together. Windows, full-race completion and multiplayer testing remain pending. This is evidence for that specific combination, not a guarantee for every mod.
 
-## Downloads
+## Baseline downloads
 
 Download and import each individual ZIP:
 
@@ -42,9 +55,9 @@ Download and import each individual ZIP:
 
 The ZIPs are the exact files used in the Linux mixed-track test. Do not rename them to `.dkrmap`. **Code > Download ZIP** downloads this whole repository, not an importable course.
 
-The older `Pickup-Fix-r5.zip` files remain in `packages` for rollback only. They have the earlier naming workaround and are not the current mixed-track preview. Never enable old and new revisions of the same Wizpig course together.
+The older `Pickup-Fix-r5.zip` files also remain in `packages` for historical rollback. They have the earlier naming workaround and are not the catalogue-compatible baseline. Never enable old and new revisions of the same Wizpig course together.
 
-## What changed
+## Baseline compatibility change
 
 The new packages take their visible course names from the manifest and DKR-R's Custom Tracks catalogue, matching the naming approach used by Splashdown Pass and Strangled Shrine. The unnecessary legacy `LEVEL_NAMES` addition and four-byte `name.bin` were removed to avoid the combined-name loader fault.
 
@@ -52,7 +65,7 @@ The track IDs, preparation credit, race headers and both object-map files are ot
 
 Each course retains an eight-racer grid, a stationary start, three laps, bananas and all five balloon colors. Wizpig I has 12 balloons and 36 bananas; Wizpig II has 34 balloons and 36 bananas. See [release notes](RELEASE-NOTES.md).
 
-## Install into your normal profile
+## Baseline installation
 
 1. Use the complete official **DKR-R 1.0.14** package and your own US Rev A/v1.1 ROM. A new custom game build is not needed for this fix.
 2. Close the game and back up the two existing Wizpig packages and your saves.
@@ -62,7 +75,7 @@ Each course retains an eight-racer grid, a stationary start, three laps, bananas
 
 No separate final profile is required. The isolated Linux profile was used only for safe validation. Do not overwrite saves or remove unrelated mods. To roll back, restore the previous two Wizpig packages.
 
-## Verified scope
+## Baseline verified scope
 
 On unmodified official **Linux DKR-R 1.0.14**, with all four maps and both community HD packs enabled:
 
@@ -77,7 +90,7 @@ Full-race completion, every pickup/checkpoint, audio, Windows, arbitrary code mo
 
 Eight additional official-importer/asset-bank/catalogue tests passed for four-map, Wizpig-only, community-only and re-enabled selections. Name-bank checks covered both US revisions, including texture-augmented banks. **The actual course payloads still require v80; those name-bank checks do not make them v77-compatible.**
 
-Run `python3 verify_packages.py` to verify the supplied archive and payload hashes. This script does not launch the game or reproduce gameplay tests. [Package checks](validation/PACKAGE-CHECKS.json) and [importer results](validation/IMPORTER-VALIDATION.json) describe the current files. Historical r5 checks are retained under `validation/r5`.
+Run `python3 verify_packages.py` to verify the supplied archive and payload hashes. This script does not launch the game or reproduce gameplay tests. [Package checks](validation/PACKAGE-CHECKS.json) and [importer results](validation/IMPORTER-VALIDATION.json) describe the catalogue-compatible baseline. Newer packages have separately scoped validation in their release notes. Historical r5 checks are retained under `validation/r5`.
 
 ## Credits and rights
 

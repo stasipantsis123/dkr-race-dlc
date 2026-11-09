@@ -1,12 +1,18 @@
+# Wizpig banana and AI-clearance preview updates
+
+2026-11-09: latest candidates for official DKR-R 1.0.15, US Rev A/v1.1 (us.v80). Both courses reduce 36 bananas to 18 at the same twelve stations, retaining six singles and six pairs. Wizpig I also adjusts 24 AI lane-height bytes at six start/finish-area controls. Other retained objects, balloons, headers, IDs and credits are unchanged.
+
+Fresh static checks pass and exact candidate bytes have prior bounded Linux CPU-finish evidence. Full human races and Windows acceptance remain pending. Wizpig II's earlier intermittent CPU stall is unresolved; its sky is unchanged. No companion is required. [Complete changes, install/rollback instructions and limits](WIZPIG-PREVIEW-UPDATE.md).
+
 # Bubbler and Smokey v1
 
 Published as individual native track ZIPs for official DKR-R 1.0.15, US Rev A/v1.1 (`us.v80`). Each preserves six banana stations but reduces the total from 18 to 9 (three singles, three pairs). Other course payloads, IDs and preparation credits remain unchanged.
 
 Both exact archives passed static checks and 120-second Linux smoke tests. Acceleration worked and both games shut down cleanly. Bubbler logged seven CPU finishes; Smokey logged four before the cutoff. Full human races, Windows, multiplayer and audio were not qualified. Supplied screenshots predate thinning. See [full notes](BUBBLER-SMOKEY-V1.md).
 
-# Wizpig mixed-track compatibility preview
+# Retained Wizpig mixed-track compatibility baseline
 
-DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`). Current package filenames contain `Catalogue-Naming-Test`.
+DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`). These historical baseline package filenames contain `Catalogue-Naming-Test`; newer 1.0.15 preview updates are described above.
 
 ## Compatibility change
 

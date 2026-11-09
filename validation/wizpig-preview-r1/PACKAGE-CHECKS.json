@@ -1,0 +1,75 @@
+[
+  {
+    "file": "Wizpig-I-USRevA-Banana-AI-Clearance-Preview-r1.zip",
+    "bytes": 2149,
+    "sha256": "4d7942d3582a0242bbc9312c02aac073c631caa65e0a67dddc9e6b49892b3636",
+    "git_blob_sha": "998311be3abb03f8b4ed4c2a106daa87fb286d7f",
+    "id": "wizpig1-ordinary-race-us-v80",
+    "builtFrom": "us.v80",
+    "payload_sha256": {
+      "header.bin": "e6dcad6f569dcf1c02e26a088f301dff6942ffbd0b23449332b4851dc0b60f60",
+      "manifest.json": "193a120c010ec510d181a3888a29a54b266b0a4a82be510639bc5c22d65fb202",
+      "objects_collectables.bin": "6265b9e4e10dd5afd464c613ff94fa8d1311f849a600d7c5f2545517ad181c95",
+      "objects_structure.bin": "07b0d8ee16b9e3385396f4b56dca254cf399b0ecf6f93ee6f1d7185642da6810"
+    },
+    "baseline_file": "Wizpig-I-USRevA-Catalogue-Naming-Test.zip",
+    "baseline_sha256": "df077b734f29eb28316489465b450ecfc5be56d4a15eab9626affb4d3b8845d5",
+    "baseline_git_blob_sha": "df7a7ccf4706949ed8aae49afb138abcba6cba79",
+    "source_course_zip_sha256": "4d7942d3582a0242bbc9312c02aac073c631caa65e0a67dddc9e6b49892b3636",
+    "source_payload_unchanged": true,
+    "bananas_before": 36,
+    "bananas_after": 18,
+    "banana_stations": {
+      "single": 6,
+      "pair": 6
+    },
+    "surviving_pickup_records": "byte-identical",
+    "balloons": 12,
+    "header_manifest": "byte-identical",
+    "decoded_structure_byte_changes": 24,
+    "changed_checkpoint_controls": [
+      0,
+      2,
+      4,
+      64,
+      66,
+      68
+    ],
+    "forbidden_content": "none; exactly manifest, header and two object maps",
+    "fresh_static_check": "PASS",
+    "fresh_runtime_launch": "not performed for this publication; existing exact-candidate evidence summarized separately"
+  },
+  {
+    "file": "Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip",
+    "bytes": 3295,
+    "sha256": "aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184",
+    "git_blob_sha": "c9e5d6f9e2390912408ababaa5d8251ed3554779",
+    "id": "wizpig2-ordinary-race-us-v80",
+    "builtFrom": "us.v80",
+    "payload_sha256": {
+      "header.bin": "b57fe2dc11f3b29a2908ef1925c5c05f1a2467f232ac59932aadfccc04922e3f",
+      "manifest.json": "dbee95a176ce26e09953656571ec2548705682fa63fbdc3df45a3b48bde439ab",
+      "objects_collectables.bin": "336e04025631fba7adf95dd5c94d00ae2497b7c212fce58d5bcff7f5af3280f7",
+      "objects_structure.bin": "ce7f7f8878be67b0c1186d4a3fccc6f61a75c58d165c5da5d25e41c525abacc8"
+    },
+    "baseline_file": "Wizpig-II-USRevA-Catalogue-Naming-Test.zip",
+    "baseline_sha256": "8bbed80e40204bc1bdb7175f225d7007d9c5a0c0e0ede752e6655ecbce8d6bb4",
+    "baseline_git_blob_sha": "3e2ec8cde641bb34d3ca7c5b5febdfdd89926057",
+    "source_course_zip_sha256": "aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184",
+    "source_payload_unchanged": true,
+    "bananas_before": 36,
+    "bananas_after": 18,
+    "banana_stations": {
+      "single": 6,
+      "pair": 6
+    },
+    "surviving_pickup_records": "byte-identical",
+    "balloons": 34,
+    "header_manifest": "byte-identical",
+    "decoded_structure_byte_changes": 0,
+    "changed_checkpoint_controls": [],
+    "forbidden_content": "none; exactly manifest, header and two object maps",
+    "fresh_static_check": "PASS",
+    "fresh_runtime_launch": "not performed for this publication; existing exact-candidate evidence summarized separately"
+  }
+]
