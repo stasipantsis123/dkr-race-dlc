@@ -1,0 +1,22 @@
+INSTALLATION CHECKED ON DKR-R 1.0.15
+
+1. Open Installed Mods.
+2. Expand MY MODS, then select CUSTOM MAGIC CODES.
+3. Import dkr_universal_lap_banners.nrm, not the outer ZIP.
+4. Set Status to All and clear the search field.
+5. The new code should show Needs approval. Open Details.
+6. Tick I trust this code mod and press Approve code.
+7. Tick Enabled for next game, close Details, and start a fresh game with
+   Session mods on.
+
+The separate MAGIC CODES section is for the built-in cheats. The custom
+code lives under MY MODS. Status: On deliberately hides disabled codes,
+including a new import; Clear filters restores the complete list.
+
+Evidence files:
+evidence/imported-under-my-mods.jpg: the exact v1 package after real import.
+evidence/on-filter-hides-new-code.jpg: the same package hidden by Status On.
+evidence/enabled-for-next-game.jpg: approved and enabled in Details.
+
+This workflow was reproduced in a fresh isolated Linux 1.0.15 profile. It is
+not proof of which control/filter was selected on the user's Windows PC.

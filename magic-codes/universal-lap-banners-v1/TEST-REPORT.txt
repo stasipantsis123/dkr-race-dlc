@@ -1,0 +1,101 @@
+UNIVERSAL SILENT LAP 3-98 BANNERS v1.0.0
+Validation date: 9 November 2026
+
+PACKAGE
+ID: dkr_universal_lap_banners
+Version: 1.0.0
+SHA-256: 9bc74a90a9b28533c8b22d37946a6a59481f29ce761e822920a089530102d745
+Host runtime: official DKR-R Linux 1.0.15, US v80, offline single-player.
+Supported metadata: US v77 and US v80; API 2; restart activation.
+
+SCOPE AND BEHAVIOR
+Adds original LAP artwork and existing HUD numerals on intermediate laps
+3-98 of standard lap races with 4-99 total laps. Native Lap 2 and the actual
+Final Lap remain untouched. No new audio call or audio asset is included.
+
+The common lap HUD is called by ordinary, boss, Taj and Time Trial race
+paths. The feature has no map or vehicle allowlist. Non-lap challenge/hub
+paths do not qualify. Online and split-screen are deliberately excluded.
+This source-level coverage does not mean every course has been driven.
+Other mods that replace the same HUD hook may conflict.
+
+The code does not set race length, replace lap counters, edit racer state,
+read native lap timing arrays, or change trophy results. It uses a separate
+presentation clock and private copies of the native HUD elements.
+
+AUTOMATED CHECKS: PASSED
+- 1,009,800 total/current-lap/animation-age combinations, plain and under
+  AddressSanitizer plus UndefinedBehaviorSanitizer.
+- All 89 two-digit values from 10 to 98: compact alpha-bound spacing,
+  one logical pixel between visible glyphs, and centered number groups.
+- 73,728 map/total/boundary combinations, with no track-name allowlist.
+- Actual-final precedence, duplicate ticks/draws, first observation,
+  pause/resume, scene unload/restart, mode/revision gates and Time Trial flag.
+- Bounded render repeats, racer/HUD preservation and colour restoration.
+- Static coexistence with unmodified Custom Trophies Creator 1.0.2:
+  separate systems, separate timing, and distinct HUD draw triggers.
+- MIPS package build: 318 relocations, no target corrections.
+- Rebuilding the public source with the documented tool arguments reproduced
+  the exact tested NRM SHA-256 above.
+- Source snapshot repository guard: zero new problems, 1,409 baseline items.
+
+COMBINED RUNTIME CHECKS
+The final v1.0.0 package and official Custom Trophies Creator 1.0.2 were
+loaded together in an isolated profile. A real custom cup supplied a
+99-lap round. A separate private test fixture changed the human lap fields
+to reach presentation boundaries without driving 99 laps. It did not set
+the total or own timing storage. This is presentation evidence only.
+
+The native/trophy counter showed 99 total laps and current values including
+10, 98 and 99. Completed added draws were logged for 10 and 98. At 99 of 99,
+no added numbered banner was emitted. No HUD-hook conflict was observed.
+The native FINAL LAP animation itself was not captured.
+
+The final package's corrected LAP 10 was visually checked in a native
+capture. Earlier compact LAP 11 and LAP 20 captures use identical main.c
+and banner_policy.h bytes; only the release metadata differs. There is no corrected LAP 98 screenshot. Its layout passed the automated
+checks and native draws were logged, but the visual claim is limited to
+10, 11 and 20.
+
+The final combined run stopped cleanly at its 240-second watchdog:
+captured=5678, transferred=5678, fallback=0, mismatch=0, overflow=0.
+No Magic Code fault was reported in that run.
+
+A later reduced-profile run again completed multiple LAP 98 draws with the
+exact final package and official trophy mod. It shut down cleanly with
+5,726 captured/transferred handoffs and zero fallback, mismatch or overflow.
+The host logged a 15-second display-list/fullSync stall near watchdog close;
+its cause was not established. Its frames missed the brief LAP 98 banner.
+A subsequent 240-second capture retry stalled at host SP-delivery during
+the cup introduction and never reached the race. It adds no race or visual
+qualification. The display was released after the game window closed.
+
+INTERACTIVE IMPORTER CHECK: PASSED
+A fresh empty 1.0.15 code catalogue imported the exact NRM through the native
+file picker. It appeared under Installed Mods > My Mods > Custom Magic Codes
+as Needs approval with Status All. Status On hid it; Clear filters restored
+it. Details approval and Enabled for next game both succeeded. The resulting
+catalogue contains the exact package digest, approved=true and enabled=true.
+This was an isolated Linux test, not a change to the user's Windows profile.
+
+LIMITS / BLOCKED CHECKS
+- No full human 99-lap drive, finish/results flow or endurance playthrough.
+- No Windows or US v77 runtime test. Multiplayer/online are unsupported.
+- No visual matrix across every eligible course or vehicle.
+- Dummy audio was used, so audible stock callouts were not auditioned.
+- Broader tooling stopped at the source snapshot's existing non-executable
+  scripts/agent_hooks/run launcher. Host configure lacked prepared build
+  tooling/dependencies. These checks did not pass and are not claimed as
+  completed tests. Focused checks and native smokes are not a full host CI pass.
+
+DISTRIBUTION
+No ROM, original game assets, executable, copied profile/save, diagnostic
+fixture or third-party trophy package is included. Artwork is read from
+the user's own configured game data. Original sounds remain unchanged.
+Screenshots are unedited native presentation captures from the stated tests.
+
+REFERENCES
+DKR-R SDK / Custom Trophies Creator:
+https://github.com/ThatGuyMcd/DKR-R/tree/main/modding/examples/custom-trophy-races
+Native HUD call paths:
+https://github.com/DavidSM64/Diddy-Kong-Racing/blob/master/src/game_ui.c

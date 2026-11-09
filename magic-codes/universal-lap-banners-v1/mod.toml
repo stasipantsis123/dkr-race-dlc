@@ -1,0 +1,11 @@
+[manifest]
+id = "dkr_universal_lap_banners"
+version = "1.0.0"
+display_name = "Universal Silent Lap 3-98 Banners"
+description = "Silent intermediate LAP 3-98 banners for offline single-player lap races with 4-99 laps. Uses original LAP art and HUD digits; preserves native Lap 2 and Final Lap. Does not change race length."
+authors = ["stasipantsis123"]
+game_id = "dkr"
+minimum_recomp_version = "1.0.15"
+dependencies = []
+[build]
+sources = ["main.c"]

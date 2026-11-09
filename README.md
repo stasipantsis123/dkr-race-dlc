@@ -1,5 +1,11 @@
 # DKR Race DLC
 
+## Universal Silent Lap 3–98 Banners v1
+
+[Download the Custom Magic Code](magic-codes/universal-lap-banners-v1/dkr_universal_lap_banners.nrm?raw=1) for **DKR-R 1.0.15**. Adds original LAP artwork and compact native HUD digits on intermediate laps of **4–99-lap offline single-player races**, without a track-name restriction or added voice. Native Lap 2 and the actual Final Lap stay unchanged. This code does not change the lap count.
+
+Designed for ordinary, boss, Taj and Time Trial races using the standard lap HUD. Tested with official Custom Trophies Creator 1.0.2. Online, split-screen and non-lap modes are unsupported; every course and Windows gameplay have not been qualified. Corrected 10, 11 and 20 were visually checked; 98 has automated and native draw-log evidence, but no corrected screenshot. [Installation, source, screenshots and exact test limits](magic-codes/universal-lap-banners-v1/README.md).
+
 More places to race in **Diddy Kong Racing Recompiled**. These mods turn the boss courses and Taj's challenges into races with a full eight-racer grid.
 
 Pick a mountain sprint, a hovercraft race through Bubbler's lagoon, a flight around Smokey's course, or a few laps around Timber's Island. Each course is a separate download, so just grab the ones you want.
