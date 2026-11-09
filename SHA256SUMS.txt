@@ -3,3 +3,5 @@ df077b734f29eb28316489465b450ecfc5be56d4a15eab9626affb4d3b8845d5  Wizpig-I-USRev
 64cf112cd48e9166fdd6b98cd0f57d1930d3799361096d2e331b98fdea6950e6  Taj-I-Five-Lap-Car-Race-v1.zip
 551ca5d67cc60483b459723c4f53f6a27518b050586b294fe6ffd7782fa70738  Taj-II-Hovercraft-Race-v1.zip
 572c3a61a47df53c79acde306b0810c07aced5f18a8afe478aacf52206128b1e  Taj-III-Plane-Race-v1.zip
+3ddbfeafa81e6e2f311de1514b129bed19bfc0f9718f92618bb7ebb7274c3f42  Bubbler-Lagoon-Race-v1.zip
+b30724131ab8b0087a80ae1700fa3efa6b13780f755b9293edc127cb4d096934  Smokey-Mountain-Race-v1.zip

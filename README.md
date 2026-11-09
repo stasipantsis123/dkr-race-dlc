@@ -1,5 +1,19 @@
 # DKR Race DLC
 
+## Bubbler and Smokey v1
+
+New ordinary-race conversions for **DKR-R 1.0.15**, **US Rev A / v1.1 (`us.v80`)**:
+
+- [Bubbler - Lagoon Race v1](packages/Bubbler-Lagoon-Race-v1.zip?raw=1), hovercraft.
+- [Smokey - Mountain Race v1](packages/Smokey-Mountain-Race-v1.zip?raw=1), plane.
+
+Each has 9 bananas at six unchanged stations: three singles and three pairs. No game-engine, vehicle-physics or other course-payload changes are included in this thinning. Neither needs a gameplay companion.
+
+**Verified:** both exact ZIPs passed package checks and 120-second Linux race-entry/acceleration smoke tests with clean exits. Bubbler logged all seven CPU finishes; Smokey logged four before the time limit. Full human races, Windows, multiplayer and audio remain unqualified. [Installation and complete limits](BUBBLER-SMOKEY-V1.md).
+
+User-supplied previews: [Bubbler](screenshots/bubbler-race-user-preview.png) and [Smokey](screenshots/smokey-race-user-preview.png). These images show earlier private editions before banana thinning.
+
+
 Unofficial custom race packages for DKR-R.
 
 ## Taj I, II and III v1

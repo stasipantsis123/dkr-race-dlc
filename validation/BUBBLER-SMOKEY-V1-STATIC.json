@@ -1,0 +1,48 @@
+[
+  {
+    "course": "Bubbler",
+    "file": "Bubbler-Lagoon-Race-v1.zip",
+    "sha256": "3ddbfeafa81e6e2f311de1514b129bed19bfc0f9718f92618bb7ebb7274c3f42",
+    "bytes": 1909,
+    "id": "bubbler-standalone-race-us-v80",
+    "payload_sha256": {
+      "objects_collectables.bin": "46875ab3401dd43c7f4b55da14a64c8695ba71e5905ce894b98b2623b94f57cc",
+      "objects_structure.bin": "66674817f044e38a1a74a7e0444cd63ef5024a35bd1584b0a43399706df5122a",
+      "header.bin": "45d410f36f400ded323168a8d9b34d5ca1752cc7bd7074a48d78d457bdce8051",
+      "manifest.json": "7e70e3b9b746e3b3443e05133ee13f7bdde962c37f2d94807b47655c7147aa68"
+    },
+    "deleted_bananas": 9,
+    "remaining_bananas": 9,
+    "stations": {
+      "single": 3,
+      "pair": 3
+    },
+    "other_archive_members": "byte-identical",
+    "runtime_profile_matches": true,
+    "runtime_status": "PASS: bounded Linux smoke; see BUBBLER-SMOKEY-V1-RUNTIME.json for limits",
+    "Windows_full_race_multiplayer_audio": "not tested"
+  },
+  {
+    "course": "Smokey",
+    "file": "Smokey-Mountain-Race-v1.zip",
+    "sha256": "b30724131ab8b0087a80ae1700fa3efa6b13780f755b9293edc127cb4d096934",
+    "bytes": 2135,
+    "id": "smokey-standalone-race-us-v80",
+    "payload_sha256": {
+      "objects_collectables.bin": "aa85ee57e2905b56c8b1bf11e4a86a9201581d60d2beb047c9c2a75b6227f54f",
+      "objects_structure.bin": "596f8f530d7e049343cab9bace7e81e7728dce107cd5bb4ab73a26cd3aec61f2",
+      "header.bin": "43f6fcaed59062222d31fbeb19725e36b6f624fab26cc04d29fb4a6a11774250",
+      "manifest.json": "438028b10c15f3ccc76b4e5a3c428acd6caf365d23beed33019a46293f4ed00d"
+    },
+    "deleted_bananas": 9,
+    "remaining_bananas": 9,
+    "stations": {
+      "single": 3,
+      "pair": 3
+    },
+    "other_archive_members": "byte-identical",
+    "runtime_profile_matches": true,
+    "runtime_status": "PASS: bounded Linux smoke; see BUBBLER-SMOKEY-V1-RUNTIME.json for limits",
+    "Windows_full_race_multiplayer_audio": "not tested"
+  }
+]

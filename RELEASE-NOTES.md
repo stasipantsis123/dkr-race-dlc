@@ -1,3 +1,9 @@
+# Bubbler and Smokey v1
+
+Published as individual native track ZIPs for official DKR-R 1.0.15, US Rev A/v1.1 (`us.v80`). Each preserves six banana stations but reduces the total from 18 to 9 (three singles, three pairs). Other course payloads, IDs and preparation credits remain unchanged.
+
+Both exact archives passed static checks and 120-second Linux smoke tests. Acceleration worked and both games shut down cleanly. Bubbler logged seven CPU finishes; Smokey logged four before the cutoff. Full human races, Windows, multiplayer and audio were not qualified. Supplied screenshots predate thinning. See [full notes](BUBBLER-SMOKEY-V1.md).
+
 # Wizpig mixed-track compatibility preview
 
 DKR-R 1.0.14, US Rev A/v1.1 (`us.v80`). Current package filenames contain `Catalogue-Naming-Test`.

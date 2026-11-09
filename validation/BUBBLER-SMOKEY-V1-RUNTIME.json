@@ -1,0 +1,192 @@
+[
+  {
+    "course": "Bubbler",
+    "archive": "Bubbler-Lagoon-Race-v1.zip",
+    "archive_sha256": "3ddbfeafa81e6e2f311de1514b129bed19bfc0f9718f92618bb7ebb7274c3f42",
+    "runtime": "official Linux DKR-R 1.0.15",
+    "duration_limit_seconds": 120,
+    "rendering": "software Vulkan",
+    "audio": "dummy, not validated",
+    "observed_race_entry": true,
+    "observed_acceleration_response": true,
+    "exit_code": 0,
+    "clean_shutdown": true,
+    "exact_course_payloads_before_and_after": true,
+    "scene": {
+      "event": "scene",
+      "scene": "1",
+      "tick": "17",
+      "map": "65",
+      "course": "dkrmap:bubbler-standalone-race-us-v80",
+      "content": "2ef66fda9528f0b6ffe6d3d2dee8b517b9a23d6e8e1393ec7e1c6f3eda46e524",
+      "geometry": "49",
+      "header_laps": "3",
+      "header_vehicle": "1",
+      "main_nodes": "22",
+      "total_nodes": "22"
+    },
+    "events": {
+      "scene": 1,
+      "first_seen": 8,
+      "progress": 120,
+      "change": 21
+    },
+    "last_racer_states": {
+      "0": {
+        "player": "0",
+        "lap": "0",
+        "checkpoint": "1",
+        "finished": "0",
+        "finish_position": "0"
+      },
+      "1": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "7",
+        "finished": "1",
+        "finish_position": "7"
+      },
+      "2": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "9",
+        "finished": "1",
+        "finish_position": "6"
+      },
+      "3": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "11",
+        "finished": "1",
+        "finish_position": "5"
+      },
+      "4": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "16",
+        "finished": "1",
+        "finish_position": "2"
+      },
+      "5": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "13",
+        "finished": "1",
+        "finish_position": "4"
+      },
+      "6": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "15",
+        "finished": "1",
+        "finish_position": "3"
+      },
+      "7": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "18",
+        "finished": "1",
+        "finish_position": "1"
+      }
+    },
+    "human_race_completed": false,
+    "cpu_finish_count": 7,
+    "diagnostic_only_companion": "read-only Race Diagnostics Observer 0.1.4; no gameplay companion",
+    "log_sha256": "8a5e0c925740c0168e2814bec1e551688f1eb4136ca900773ab7c5f564294827"
+  },
+  {
+    "course": "Smokey",
+    "archive": "Smokey-Mountain-Race-v1.zip",
+    "archive_sha256": "b30724131ab8b0087a80ae1700fa3efa6b13780f755b9293edc127cb4d096934",
+    "runtime": "official Linux DKR-R 1.0.15",
+    "duration_limit_seconds": 120,
+    "rendering": "software Vulkan",
+    "audio": "dummy, not validated",
+    "observed_race_entry": true,
+    "observed_acceleration_response": true,
+    "exit_code": 0,
+    "clean_shutdown": true,
+    "exact_course_payloads_before_and_after": true,
+    "scene": {
+      "event": "scene",
+      "scene": "1",
+      "tick": "17",
+      "map": "65",
+      "course": "dkrmap:smokey-standalone-race-us-v80",
+      "content": "29aac1a43b83ad424da37595792046bd4d24d33b0fa55b461545390efecb0fed",
+      "geometry": "38",
+      "header_laps": "3",
+      "header_vehicle": "2",
+      "main_nodes": "25",
+      "total_nodes": "25"
+    },
+    "events": {
+      "scene": 1,
+      "first_seen": 8,
+      "progress": 128,
+      "change": 18
+    },
+    "last_racer_states": {
+      "0": {
+        "player": "0",
+        "lap": "0",
+        "checkpoint": "1",
+        "finished": "0",
+        "finish_position": "0"
+      },
+      "1": {
+        "player": "-1",
+        "lap": "2",
+        "checkpoint": "22",
+        "finished": "0",
+        "finish_position": "0"
+      },
+      "2": {
+        "player": "-1",
+        "lap": "2",
+        "checkpoint": "23",
+        "finished": "0",
+        "finish_position": "0"
+      },
+      "3": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "4",
+        "finished": "1",
+        "finish_position": "2"
+      },
+      "4": {
+        "player": "-1",
+        "lap": "2",
+        "checkpoint": "24",
+        "finished": "0",
+        "finish_position": "0"
+      },
+      "5": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "0",
+        "finished": "1",
+        "finish_position": "4"
+      },
+      "6": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "6",
+        "finished": "1",
+        "finish_position": "1"
+      },
+      "7": {
+        "player": "-1",
+        "lap": "3",
+        "checkpoint": "3",
+        "finished": "1",
+        "finish_position": "3"
+      }
+    },
+    "human_race_completed": false,
+    "cpu_finish_count": 4,
+    "diagnostic_only_companion": "read-only Race Diagnostics Observer 0.1.4; no gameplay companion",
+    "log_sha256": "5087ec14d57fec970dfed5c73a06bbf1846d6385c11c8275453de457f4b6f3d1"
+  }
+]
