@@ -1,5 +1,11 @@
 # What's changed
 
+## Bluey - Snow Race v1 + companion 0.3.8
+
+10 November 2026. Publishes the exact reduced-banana Bluey hovercraft course and companion 0.3.8 tested by the user. The user reported five consecutive restarts with normal-speed music on Windows/US v1.0. Requires both downloads, DKR-R 1.0.15+, offline single-player, and an approved/enabled companion with its numeric option set to 1. US v1.0 and US v1.1 are declared; the latter has code-level coverage, not a new listening pass. No separate ROM is needed. Previous releases are preserved.
+
+[Downloads, setup, compatibility and limits](docs/BLUEY-V1.md).
+
 ## Tricky - Mountain Race v1
 
 Tricky's mountain is now an eight-racer, one-lap car sprint. The rolling boulders are back, the inner-cliff guardrail is in place, and there are 9 bananas across the same six spots.

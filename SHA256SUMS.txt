@@ -9,3 +9,5 @@ b30724131ab8b0087a80ae1700fa3efa6b13780f755b9293edc127cb4d096934  Smokey-Mountai
 aca4c47d423d11bc5a44853aec44a066b8964b0d6fa19404dd763fcc878e5184  Wizpig-II-USRevA-Banana-Balance-Preview-r1.zip
 6cb4b4e0f3acce4e4f37fdc623fdcaac57034508b7e9e39e4ef8e63dd52b2fde  packages/Tricky-Mountain-Race-v1.zip
 73e1057fb3dbc717c342239740b5d8e3fb319870377c4d3c42f33ab303de1ebb  packages/Tricky-Sprint-Companion-0.3.5.nrm
+3755d7c1cf567e3f477c0e96f07f9b733a3d0d5015c6e09978a7740b5feb5140  packages/Bluey-Snow-Race-v1.zip
+93d7a58177a65ae4662e1429380138f7a87c25d04373ce959f54a1bffdb80bd1  packages/Bluey-Sprint-Companion-0.3.8.nrm

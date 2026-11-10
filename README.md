@@ -12,7 +12,7 @@ More places to race in **Diddy Kong Racing Recompiled**. These mods turn the bos
 
 Pick a mountain sprint, a hovercraft race through Bubbler's lagoon, a flight around Smokey's course, or a few laps around Timber's Island. Each course is a separate download, so just grab the ones you want.
 
-You'll need **DKR-R 1.0.15** and your own **US Rev A / v1.1 (`us.v80`)** game data for the current downloads.
+You'll need **DKR-R 1.0.15** and your own compatible game data. Most downloads target **US Rev A / v1.1 (`us.v80`)**; **Bluey v1 with companion 0.3.8 also supports US v1.0 (`us.v77`)**, as described in its notes.
 
 ## Pick a race
 
@@ -22,7 +22,15 @@ Tricky's course becomes an eight-racer car sprint. It's one lap, with the origin
 
 [Download Tricky](packages/Tricky-Mountain-Race-v1.zip?raw=1) · [Download the required sprint companion](packages/Tricky-Sprint-Companion-0.3.5.nrm?raw=1) · [Setup and course notes](docs/TRICKY-V1.md)
 
-**Tricky needs both downloads.** The companion handles CPU finishing, stopping after the line and normal-speed sprint music. Use version **0.3.5**, set its option to **1**, then restart. Play offline.
+**Tricky needs both downloads.** The companion handles CPU finishing, stopping after the line and normal-speed sprint music. For Tricky alone, use version **0.3.5**, set its option to **1**, then restart. **If also using Bluey, select the shared 0.3.8 edition instead; see [Bluey compatibility notes](docs/BLUEY-V1.md#install). These are editions of one code, not two independent mods.** Play offline.
+
+### Bluey: a snowy hovercraft sprint
+
+Race Bluey's snowy course with a full eight-racer grid, one lap and 9 bananas across six spots.
+
+[Download Bluey](packages/Bluey-Snow-Race-v1.zip?raw=1) · [Download the required companion 0.3.8](packages/Bluey-Sprint-Companion-0.3.8.nrm?raw=1) · [Setup, screenshot and test notes](docs/BLUEY-V1.md)
+
+**Bluey needs both downloads.** Select and approve companion 0.3.8, turn on **Enabled for next game**, set its numeric option to **1**, save and fully restart. The user reported five consecutive restarts with normal music on Windows/US v1.0. Play offline; US v1.1 is also declared, with its verification limits explained in the notes.
 
 ### Bubbler: take the hovercraft
 
@@ -62,13 +70,13 @@ No companion needed. **These are still playtest previews.** Wizpig II can occasi
 2. Download the individual course ZIP you want. Keep it as a ZIP. GitHub's **Code > Download ZIP** gives you the whole repository, which isn't an importable course.
 3. Start DKR-R, open **Mods / Hacks > Import mods > DKR-R tracks** and import it.
 4. Keep just one version of each course enabled. Leave your other tracks and saves in place, turn Session mods ON, then choose the course in Custom Tracks.
-5. For Tricky, also follow the [companion setup](docs/TRICKY-V1.md#install). The course ZIP alone isn't enough.
+5. For Tricky or Bluey, also follow that course's companion setup. The course ZIP alone isn't enough. Bluey uses 0.3.8; its companion shares Tricky's package ID, so only one edition can be selected.
 
 To go back to an older version, close the game and restore that course's previous ZIP. For Tricky, restore its matching companion too.
 
 ## A quick heads-up
 
-The downloads have passed package checks and Linux race tests, but the amount of testing varies by course. Full human races, Windows gameplay, audio, multiplayer and every possible mod combination still need checking. Each course's notes explain what was tested and what's left.
+Package checks and gameplay evidence are recorded separately for each release. Coverage varies: Bluey now has a user-reported Windows music/restart pass, while full human races, other platforms/revisions, multiplayer and arbitrary mod combinations are not universally verified. Each course's notes explain exactly what was tested and what's left.
 
 Looking for an older Wizpig download? The [1.0.14 versions and setup](docs/WIZPIG-1.0.14.md) are still here for rollback. There's also a [change log](RELEASE-NOTES.md), [checksums](SHA256SUMS.txt) and the detailed records in [validation](validation).
 

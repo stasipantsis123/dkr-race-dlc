@@ -209,5 +209,19 @@
     "required_companion": "Tricky-Sprint-Companion-0.3.5.nrm",
     "catalogue_content_sha256": "2b427d3291986d70633b8b72225756bd2b75148605bea2893c874198fbd45245",
     "runtime_status": "PASS: targeted Linux 1.0.15 native CPU finish/stop/restart check; see TRICKY-V1-RUNTIME.json"
+  },
+  {
+    "file": "Bluey-Snow-Race-v1.zip",
+    "bytes": 2212,
+    "sha256": "3755d7c1cf567e3f477c0e96f07f9b733a3d0d5015c6e09978a7740b5feb5140",
+    "unchanged_from_user_test_payload": true,
+    "payload_sha256": {
+      "objects_collectables.bin": "6d3b3b9e2f226df885258064df5d04b79dc81a56631232db6f1dd24256988543",
+      "objects_structure.bin": "f5eb724bef1ea7f23afb23bead8e9e0a3615b30d6a7cc0436a3e936cc74ab1ef",
+      "header.bin": "aba99c2d17a3746cf66a15899e06a4974dba537ade59fbc04cdcfb105b0f41b1",
+      "manifest.json": "c013330b175c2abf8952896a99b51f38b05488df528a1144e78731ca98a12a5d"
+    },
+    "id": "bluey-standalone-race-us-v80",
+    "builtFrom": "us.v80"
   }
 ]

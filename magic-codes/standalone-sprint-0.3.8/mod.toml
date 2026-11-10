@@ -1,0 +1,20 @@
+[manifest]
+id = "dkr_standalone_sprint_finish_experimental"
+version = "0.3.8"
+display_name = "Standalone Sprint Finish, Stop and Normal Music (Bluey dual-US music candidate)"
+description = "Offline US v77/v80 companion for the exact Tricky v1 and earlier scoped Tricky/Bluey courses. Preserves native CPU finishing and post-line stopping; candidate blocks final-lap requests before audio initialization with explicit activation diagnostics. Runtime validation is pending. Requires DKR-R 1.0.15 or later. Disabled by default; enable the code and set its option to 1. Online play is unsupported."
+authors = ["Local preparation"]
+game_id = "dkr"
+minimum_recomp_version = "1.0.15"
+dependencies = []
+
+[[manifest.config_options]]
+id = "enabled"
+name = "Experimental sprint finish (0 off, 1 on)"
+type = "Number"
+default = 0.0
+min = 0.0
+max = 1.0
+
+[build]
+sources = ["main.c"]

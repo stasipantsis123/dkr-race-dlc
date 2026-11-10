@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "api": 2,
+  "activation": "restart",
+  "online": "offline-only",
+  "revisions": [
+    "us.v77",
+    "us.v80"
+  ],
+  "requires": {
+    "core": 1,
+    "settings": 1,
+    "game": 1,
+    "catalogues2": 2,
+    "racers": 1
+  },
+  "systems": [
+    "standalone-sprint-finish"
+  ]
+}

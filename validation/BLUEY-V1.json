@@ -1,0 +1,56 @@
+{
+  "release": "Bluey - Snow Race v1",
+  "companion_version": "0.3.8",
+  "runtime_tested": "1.0.15",
+  "native_revision_tested": "us.v77",
+  "declared_revisions": [
+    "us.v77",
+    "us.v80"
+  ],
+  "user_report": "Five consecutive restarts with normal music each time after companion installation/enabling.",
+  "user_report_date": "2026-11-10",
+  "native_startup_checks": 2,
+  "native_startup_observations": [
+    "Exact companion loaded",
+    "Bluey catalogue identity resolved",
+    "Lap Banners + Swish 1.1.1 also enabled"
+  ],
+  "host_counted_cases_per_revision_per_mode": 1992,
+  "interpreter_scenarios_per_revision": 53,
+  "not_claimed": [
+    "native audible us.v80 check",
+    "all CPU finishes on us.v77",
+    "full human results",
+    "arbitrary mixed mods",
+    "online",
+    "split-screen"
+  ],
+  "packages": [
+    {
+      "file": "Bluey-Snow-Race-v1.zip",
+      "bytes": 2212,
+      "sha256": "3755d7c1cf567e3f477c0e96f07f9b733a3d0d5015c6e09978a7740b5feb5140",
+      "unchanged_from_user_test_payload": true,
+      "payload_sha256": {
+        "objects_collectables.bin": "6d3b3b9e2f226df885258064df5d04b79dc81a56631232db6f1dd24256988543",
+        "objects_structure.bin": "f5eb724bef1ea7f23afb23bead8e9e0a3615b30d6a7cc0436a3e936cc74ab1ef",
+        "header.bin": "aba99c2d17a3746cf66a15899e06a4974dba537ade59fbc04cdcfb105b0f41b1",
+        "manifest.json": "c013330b175c2abf8952896a99b51f38b05488df528a1144e78731ca98a12a5d"
+      },
+      "id": "bluey-standalone-race-us-v80",
+      "builtFrom": "us.v80"
+    },
+    {
+      "file": "Bluey-Sprint-Companion-0.3.8.nrm",
+      "bytes": 21318,
+      "sha256": "93d7a58177a65ae4662e1429380138f7a87c25d04373ce959f54a1bffdb80bd1",
+      "unchanged_from_user_test_payload": true,
+      "payload_sha256": {
+        "dkr.json": "6147f744ac3d834f3ddaeac5ab50dbd84a4278415116cc513e3e74d055c71d8a",
+        "mod.json": "6457a55894ccdaf9d7666716a3593ca74eb742967b8c719b6aadb651f2905a8b",
+        "mod_binary.bin": "3ae5b3c99a7d0097ea14d6b3301ced953f63cdf4ce6bf401d41f2bfd9f64cc8b",
+        "mod_syms.bin": "d0cfdb17fba1da6f491ec1db44719c88b7cd6093f2405ed4c3858aa69551300c"
+      }
+    }
+  ]
+}
