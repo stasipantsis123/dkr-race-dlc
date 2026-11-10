@@ -1,10 +1,12 @@
 # DKR Race DLC
 
-## Universal Silent Lap 3–98 Banners v1
+## Universal Lap 3–98 Banners + Swish 1.1.1
 
-[Download the Custom Magic Code](magic-codes/universal-lap-banners-v1/dkr_universal_lap_banners.nrm?raw=1) for **DKR-R 1.0.15**. Adds original LAP artwork and compact native HUD digits on intermediate laps of **4–99-lap offline single-player races**, without a track-name restriction or added voice. Native Lap 2 and the actual Final Lap stay unchanged. This code does not change the lap count.
+[Download the Custom Magic Code](magic-codes/universal-lap-banners-v1.1.1/dkr_universal_lap_banners.nrm?raw=1) for **DKR-R 1.0.15+**. Adds intermediate LAP banners and the original swish as they slide in and out. The Lap 3 crash from the earlier swish test build is fixed, and **1.1.1 has been successfully tested in-game**.
 
-Designed for ordinary, boss, Taj and Time Trial races using the standard lap HUD. Tested with official Custom Trophies Creator 1.0.2. Online, split-screen and non-lap modes are unsupported; every course and Windows gameplay have not been qualified. Corrected 10, 11 and 20 were visually checked; 98 has automated and native draw-log evidence, but no corrected screenshot. [Installation, source, screenshots and exact test limits](magic-codes/universal-lap-banners-v1/README.md).
+For **offline single-player, 4–99-lap races** using the standard lap HUD. Native Lap 2 and the actual Final Lap stay unchanged. It does not change race length or add voices. Online and split-screen are unsupported.
+
+[Installation, source and test limits](magic-codes/universal-lap-banners-v1.1.1/README.md) · [Original silent v1, preserved](magic-codes/universal-lap-banners-v1/README.md)
 
 More places to race in **Diddy Kong Racing Recompiled**. These mods turn the boss courses and Taj's challenges into races with a full eight-racer grid.
 

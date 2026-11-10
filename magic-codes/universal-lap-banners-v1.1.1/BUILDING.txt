@@ -1,0 +1,34 @@
+BUILDING THE SOURCE
+
+Use the official DKR-R modding SDK and its supported Clang, LLD and
+RecompModTool toolchain. No ROM or game assets are needed to compile this
+code-only package. Source contains mod.toml and dkr.json.
+
+Provide absolute paths for your tool installation:
+
+DKR_SDK=/path/to/DKR-R/modding \
+CLANG=/path/to/clang LLD=/path/to/ld.lld \
+RECOMP_MOD_TOOL=/path/to/RecompModTool \
+sh build.sh /path/to/new-output-directory
+
+Run the focused plain and sanitized tests:
+DKR_SDK=/path/to/DKR-R/modding sh tests/run.sh
+
+Run the optional source-level trophy coexistence check:
+python3 tests/test_trophy_contract.py \
+  --dkr-repo /path/to/DKR-R \
+  --trophy-nrm /path/to/dkr_custom_trophies.nrm
+
+That check expects official Custom Trophies Creator 1.0.2 and the matching
+DKR-R source. It is static verification, not a substitute for a native run.
+
+REQUIRED FOR 1.1.1
+Always use build.sh. Its clang-aligned.sh adapter passes the official Clang
+-mstack-alignment=16 for every translation unit. Default MIPS O32 permits
+8-byte frames, but the DKR-R native audio-call boundary requires 16 bytes.
+Do not rebuild this version with unmodified default SDK flags alone.
+The adapter changes no source or SDK files and invokes the supplied real
+Clang directly. Other build frontends must supply the same alignment flag.
+
+Build.sh also audits every linked MIPS function's fixed stack adjustments.
+Manual audit: python3 tests/test_stack_abi.py /path/to/output/mod.elf
