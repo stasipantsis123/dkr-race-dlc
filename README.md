@@ -1,5 +1,11 @@
 # DKR Race DLC
 
+## Original Ten Minimap Icons v1.2.1
+
+See who’s where at a glance with upright character portraits on your minimap. Optional cosmetic; custom racers without compatible icons keep dots/arrows.
+
+[Download the mod](packages/Stasi-Original-Ten-Minimap-Icons-1.2.1.nrm?raw=1) · [Install, screenshot and compatibility](docs/ORIGINAL-TEN-MINIMAP-ICONS-1.2.1.md)
+
 ## Universal Lap 3–98 Banners + Swish 1.1.1
 
 [Download the Custom Magic Code](magic-codes/universal-lap-banners-v1.1.1/dkr_universal_lap_banners.nrm?raw=1) for **DKR-R 1.0.15+**. Adds intermediate LAP banners and the original swish as they slide in and out. The Lap 3 crash from the earlier swish test build is fixed, and **1.1.1 has been successfully tested in-game**.
