@@ -4,26 +4,33 @@ See who’s where at a glance! This mod replaces the original racers’ minimap 
 
 [Download the mod (.nrm)](../packages/Stasi-Original-Ten-Minimap-Icons-1.2.1.nrm?raw=1) · [ZIP with instructions, credits and checksums](../packages/Stasi-Original-Ten-Minimap-Icons-1.2.1-Release.zip?raw=1)
 
-![Normal-client custom-map playtest supplied by Stasi](../screenshots/original-ten-minimap-icons-1.2.1.png)
+![My minimap playtest on a custom track](../screenshots/original-ten-minimap-icons-1.2.1.png)
 
 ## Install
-Use stock DKR-R **1.0.15**, your own supported US game data (us.v77 or us.v80), and offline play.
+Use DKR-R **1.0.15**, your own supported US game data (us.v77 or us.v80), and offline play.
 1. Download the .nrm, or extract it from the release ZIP.
 2. In **Custom Magic Codes**, import it, select version **1.2.1**, approve if prompted and enable it.
-3. Disable other minimap implementations, keep **Session mods ON**, and restart DKR-R.
-No typed code, separate client or engine replacement is required. Keep your existing mods and saves. Compatibility with every possible mod combination is not claimed.
+3. Disable other minimap mods, keep **Session mods ON**, and restart DKR-R.
+
+You don't need to type a code, replace your game or use a separate client. Keep your existing mods and saves.
 
 ## Custom characters
-The original ten racers, including T.T. and Drumstick, have upright portraits. Custom racers without a compatible enabled optional icon retain their normal human-player arrow or CPU dot; they do not inherit the donor character’s portrait. Optional custom icon companions are separate and are **not included**. This release does not promise a completed creator-tool workflow.
+The original ten racers, including T.T. and Drumstick, get upright portraits. Custom characters without a matching optional icon keep their usual arrow when you're playing as them, or a dot when they're a CPU. They won't borrow another character's face.
 
-## Tested scope
-Stasi reported successful Windows play in the normal client, including a custom map and Mario. Screenshots show custom-player arrows alongside CPU portraits; another shows portraits and coloured dots coexisting. An isolated Kazooie test also passed. These are scoped gameplay reports, not exhaustive platform, renderer, vehicle, finish/shutdown or arbitrary-mod certification. SDK/CPU checks cover both US revisions. Optional companion gameplay and broader coverage remain follow-up tests. The distributed NRM is byte-identical to the tested 1.2.1 file.
+Custom-character icon add-ons are separate and **aren't included** in this download. A creator-tool workflow isn't included either.
 
-## Disable
-Disable dependent optional companions first if installed, then disable this core and restart. To roll back, select a retained older edition with only one minimap implementation enabled. No ROM or save edits.
+## What I've tested
+I tested it on Windows in my normal client, including a custom track and Mario. Mario kept his arrow while the regular CPU racers had their faces. I also tested Kazooie in a separate setup, and saw portraits and coloured dots together on the minimap.
 
-## Credits and rights
-Stasi supplied the MKPC minimap artwork, icon selection, design direction and playtest feedback. DKR-R contributors supplied the SDK; its exact MIT notice is included in the release ZIP. This notice covers SDK material and does not grant new artwork or character rights. Unofficial community cosmetic; no endorsement is claimed.
+I haven't tested every platform, renderer, vehicle or mod combination, or fully checked race completion and quitting across them all. Code-level checks cover both US revisions. Custom-icon add-ons still need their own gameplay tests. This download is the exact 1.2.1 mod I tested, with no code changes for release.
+
+## Turn it off or roll back
+If you've installed any optional icon add-ons that depend on this mod, disable those first. Then disable this mod and restart. To roll back, select your saved older version and keep only one minimap mod enabled. No ROM or save edits are needed.
+
+## Credits
+I supplied the MKPC minimap artwork, chose the icons and design, and playtested the mod. Thanks to the DKR-R contributors for the SDK. Its MIT notice is included in the ZIP and applies to the SDK material, not new rights to the artwork or characters.
+
+This is an unofficial community cosmetic, not an endorsed release.
 
 ## SHA256
 ```text
